@@ -2,9 +2,9 @@ name: Auto Update Xoiche M3U Playlist
 
 on:
   schedule:
-    # Chạy tự động mỗi 30 phút một lần
-    - cron: '*/30 * * * *'
-  workflow_dispatch: # Cho phép nhấn nút chạy thủ công trên GitHub
+    # Chạy tự động 2 giờ 1 lần (vào phút thứ 0 của mỗi 2 tiếng: 00:00, 02:00, 04:00...)
+    - cron: '0 */2 * * *'
+  workflow_dispatch: # Cho phép nhấn nút "Run workflow" để chạy thủ công trên GitHub khi cần
 
 jobs:
   update-m3u:
