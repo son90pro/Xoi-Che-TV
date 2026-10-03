@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5_russia.jpg" group-title="Bóng đá",22:00 03/10 ⚽ Russia vs Namibia (Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/14_croatia.jpg" group-title="Bóng đá",23:00 03/10 ⚽ Croatia vs Anh (Táo Dai) [FHD]
-https://live.khoga.space/live/livehub1/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/704_iceland.jpg" group-title="Bóng đá",23:00 03/10 ⚽ Iceland vs Bulgaria (Khô Cay) [FHD]
-https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://flagcdn.com/w160/mk.png" group-title="Bóng đá",01:45 04/10 ⚽ Bắc Macedonia vs Scotland (Táo Dai) [FHD]
 https://live.khoga.space/live/livehub1/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/2_switzerland.jpg" group-title="Bóng đá",01:45 04/10 ⚽ Thụy Sĩ vs Slovenia (Khô Cay) [FHD]
@@ -29,6 +23,12 @@ https://live.khoga.space/live/livehub1/index.m3u8
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/697_cyprus.jpg" group-title="Bóng đá",23:00 05/10 ⚽ Síp vs Latvia (Táo Dai) [FHD]
 https://live.khoga.space/live/livehub1/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/14_croatia.jpg" group-title="Bóng đá",23:00 03/10 ⚽ Croatia vs Anh (Táo Dai) [FHD]
+https://live.khoga.space/live/livehub1/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/704_iceland.jpg" group-title="Bóng đá",23:00 03/10 ⚽ Iceland vs Bulgaria (Khô Cay) [FHD]
+https://live.khoga.space/live/livehub9/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5_russia.jpg" group-title="Bóng đá",22:00 03/10 ⚽ Russia vs Namibia (Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7260_almeria.jpg" group-title="Bóng đá",21:15 03/10 ⚽ Almeria vs Burgos CF (Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/347_india.jpg" group-title="Bóng đá",21:00 03/10 ⚽ India vs Brazil (Gà Rừng BLV) [FHD]
