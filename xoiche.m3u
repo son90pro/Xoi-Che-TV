@@ -1,16 +1,12 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/536_argentina.jpg" group-title="Bóng đá",07:00 04/10 ⚽ Argentina vs Burkina Faso (Gà Rừng BLV) [FHD]
-https://live.khoga.space/live/livehub4/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/523_united-states.jpg" group-title="Bóng đá",09:00 04/10 ⚽ Mỹ vs Mexico (Gà Rừng BLV) [FHD]
-https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/10506_tegevajaro-miyazaki.jpg" group-title="Bóng đá",17:00 04/10 ⚽ Tegevajaro Miyazaki vs Omiya Ardija (Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7216_real-sociedad-ii.jpg" group-title="Bóng đá",19:00 04/10 ⚽ Real Sociedad B vs Granada CF (Táo Dai) [FHD]
 https://live.khoga.space/live/livehub1/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/25_barcelona-w.jpg" group-title="Bóng đá",22:00 04/10 ⚽ Barcelona Women vs Real Madrid W (Khô Cay) [FHD]
-https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/681_kosovo.jpg" group-title="Bóng đá",23:00 04/10 ⚽ Kosovo vs Áo (Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/25_barcelona-w.jpg" group-title="Bóng đá",00:00 05/10 ⚽ Barcelona Women vs Real Madrid W (Khô Cay) [FHD]
+https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/677_republic-of-ireland.jpg" group-title="Bóng đá",01:45 05/10 ⚽ Ireland vs Israel (Táo Dai) [FHD]
 https://live.khoga.space/live/livehub1/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/10_netherlands.jpg" group-title="Bóng đá",01:45 05/10 ⚽ Hà Lan vs Serbia (Tam Mao) [FHD]
@@ -27,6 +23,10 @@ https://live.khoga.space/live/livehub1/index.m3u8
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8049_trng-ti-ng-nai.jpg" group-title="Bóng đá",18:00 06/10 ⚽ Truong Tuoi Dong Nai vs Aurora Saigon United (Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/523_united-states.jpg" group-title="Bóng đá",09:00 04/10 ⚽ Mỹ vs Mexico (Gà Rừng BLV) [FHD]
+https://live.khoga.space/live/livehub4/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/536_argentina.jpg" group-title="Bóng đá",07:00 04/10 ⚽ Argentina vs Burkina Faso (Gà Rừng BLV) [FHD]
+https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/738_ivory-coast.jpg" group-title="Bóng đá",02:00 04/10 ⚽ Bờ Biển Ngà vs Cameroon (Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://flagcdn.com/w160/mk.png" group-title="Bóng đá",01:45 04/10 ⚽ Bắc Macedonia vs Scotland (Táo Dai) [FHD]
