@@ -1,17 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/541_ecuador.jpg" group-title="Bóng đá",13:30 05/10 ⚽ Ecuador vs Panama (Khô Chè) [FHD]
-https://live.khoga.space/live/livehub5/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/23_portugal.jpg" group-title="Bóng đá",01:45 05/10 ⚽ Bồ Đào Nha vs Na Uy (Khô Chè) [FHD]
-https://live.khoga.space/live/livehub5/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/23_portugal.jpg" group-title="Bóng đá",01:45 05/10 ⚽ Bồ Đào Nha vs Na Uy (Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche.live/media/teams/logos/team_478.jpg" group-title="Bóng đá",16:00 05/10 ⚽ Malaysia vs Việt Nam (Khô Cay) [FHD]
-https://live.khoga.space/live/livehub9/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/540_japan.jpg" group-title="Bóng đá",17:30 05/10 ⚽ Nhật Bản vs New Zealand (Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche.live/media/teams/logos/team_484.jpg" group-title="Bóng đá",20:00 05/10 ⚽ Indonesia vs Thái Lan (Gà Rừng BLV) [FHD]
-https://live.khoga.space/live/livehub4/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/724_uganda.jpg" group-title="Bóng đá",20:00 05/10 ⚽ Uganda vs CHDC Congo (Xôi Xoài) [FHD]
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/697_cyprus.jpg" group-title="Bóng đá",23:00 05/10 ⚽ Síp vs Latvia (Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/685_bosnia-herzegovina.jpg" group-title="Bóng đá",01:45 06/10 ⚽ Bosnia & Herzegovina vs Ba Lan (Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
@@ -21,6 +9,8 @@ https://live.khoga.space/live/livehub3/index.m3u8
 https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3_italy.jpg" group-title="Bóng đá",01:45 06/10 ⚽ Ý vs Thổ Nhĩ Kỳ (Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/662_guatemala.jpg" group-title="Bóng đá",07:00 06/10 ⚽ Guatemala vs Suriname (Xôi Xoài) [FHD]
+https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/522_honduras.jpg" group-title="Bóng đá",09:00 06/10 ⚽ Honduras vs Jamaica (Gà Rừng BLV) [FHD]
 https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/44313_lam-dong.jpg" group-title="Bóng đá",15:30 06/10 ⚽ Lam Dong vs Song Lam Nghe An (Khô Cay) [FHD]
@@ -51,8 +41,6 @@ https://live.khoga.space/live/livehub9/index.m3u8
 https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5051_urawa-reds.jpg" group-title="Bóng đá",16:00 07/10 ⚽ Urawa Reds vs Omiya Ardija (Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5046_sanfrecce-hiroshima.jpg" group-title="Bóng đá",16:30 07/10 ⚽ Sanfrecce Hiroshima vs Iwaki (Xôi Xoài) [FHD]
-https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/380_tokyo.jpg" group-title="Bóng đá",17:00 07/10 ⚽ FC Tokyo vs Shonan Bellmare (Khô Chè) [FHD]
 https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7565_buriram-united.jpg" group-title="Bóng đá",19:00 07/10 ⚽ Buriram vs Borneo (Tam Mao) [FHD]
@@ -61,9 +49,17 @@ https://live.khoga.space/live/livehub8/index.m3u8
 https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5306_kuching-city.jpg" group-title="Bóng đá",20:00 07/10 ⚽ Kuching City FC vs Tampines (Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/10543_neftchi.jpg" group-title="Bóng đá",21:00 07/10 ⚽ Neftchi Fargona vs Xorazm Urganch (Xôi Xoài) [FHD]
-https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3541_gnistan.jpg" group-title="Bóng đá",23:00 07/10 ⚽ Gnistan vs Inter Turku (Khô Chè) [FHD]
+https://live.khoga.space/live/livehub5/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche.live/media/teams/logos/team_484.jpg" group-title="Bóng đá",20:00 05/10 ⚽ Indonesia vs Thái Lan (Gà Rừng BLV) [FHD]
+https://live.khoga.space/live/livehub4/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/724_uganda.jpg" group-title="Bóng đá",20:00 05/10 ⚽ Uganda vs CHDC Congo (Xôi Xoài) [FHD]
+https://live.khoga.space/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/540_japan.jpg" group-title="Bóng đá",17:30 05/10 ⚽ Nhật Bản vs New Zealand (Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche.live/media/teams/logos/team_478.jpg" group-title="Bóng đá",16:00 05/10 ⚽ Malaysia vs Việt Nam (Khô Cay) [FHD]
+https://live.khoga.space/live/livehub9/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/541_ecuador.jpg" group-title="Bóng đá",13:30 05/10 ⚽ Ecuador vs Panama (Khô Chè) [FHD]
 https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/518_nicaragua.jpg" group-title="Bóng đá",09:00 05/10 ⚽ Nicaragua vs Dominican Republic (Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
@@ -71,5 +67,9 @@ https://live.khoga.space/live/livehub9/index.m3u8
 https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/10_netherlands.jpg" group-title="Bóng đá",01:45 05/10 ⚽ Hà Lan vs Serbia (Gà Rừng BLV) [FHD]
 https://live.khoga.space/live/livehub4/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/23_portugal.jpg" group-title="Bóng đá",01:45 05/10 ⚽ Bồ Đào Nha vs Na Uy (Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/23_portugal.jpg" group-title="Bóng đá",01:45 05/10 ⚽ Bồ Đào Nha vs Na Uy (Khô Chè) [FHD]
+https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4_wales.jpg" group-title="Bóng đá",01:45 05/10 ⚽ Xứ Wales vs Đan Mạch (Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
