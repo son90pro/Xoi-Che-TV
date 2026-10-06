@@ -1,16 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/651_korea-republic.jpg" group-title="Bóng đá",18:00 06/10 ⚽ Hàn Quốc vs Uzbekistan (Gà Rừng BLV) [FHD]
-https://live.khoga.space/live/livehub4/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche.live/media/teams/logos/1791273106901580931_100dd92f.png" group-title="Bóng đá",15:30 06/10 ⚽ Lam Dong vs Song Lam Nghe An (Khô Cay) [FHD]
-https://live.khoga.space/live/livehub9/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8049_trng-ti-ng-nai.jpg" group-title="Bóng đá",18:00 06/10 ⚽ Truong Tuoi Dong Nai vs Đồng Tháp (Xôi Xoài) [FHD]
-https://live.khoga.space/live/livehub3/index.m3u8
-#EXTINF:-1 tvg-logo="https://flagcdn.com/w160/cn.png" group-title="Bóng đá",18:35 06/10 ⚽ Trung Quốc vs Tajikistan (Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/686_kazakhstan.jpg" group-title="Bóng đá",21:00 06/10 ⚽ Kazakhstan vs Faroe Islands (Khô Chè) [FHD]
-https://live.khoga.space/live/livehub5/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/347_india.jpg" group-title="Bóng đá",21:00 06/10 ⚽ India vs Uruguay (Xôi Xoài) [FHD]
-https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche.live/media/teams/logos/images_RHi333C.jpg" group-title="Bóng chuyền",22:00 06/10 🏐 VakıfBank vs Eczacıbaşı Peron İstanbul (Xôi Gà) [FHD]
 https://live.khoga.space/live/livehub2/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5_russia.jpg" group-title="Bóng đá",23:00 06/10 ⚽ Russia vs Nigeria (Khô Cay) [FHD]
@@ -73,3 +61,15 @@ https://live.khoga.space/live/livehub3/index.m3u8
 https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5160_daejeon-hana-citizen.jpg" group-title="Bóng đá",12:00 09/10 ⚽ Daejeon vs Jeonbuk (Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5170_incheon-united.jpg" group-title="Bóng đá",14:30 09/10 ⚽ Incheon vs Pohang (Khô Cay) [FHD]
+https://live.khoga.space/live/livehub9/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5053_kashima-antlers.jpg" group-title="Bóng đá",17:00 09/10 ⚽ Kashima Antlers vs Gamba Osaka (Khô Chè) [FHD]
+https://live.khoga.space/live/livehub5/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/13465_qingdao-hainiu.jpg" group-title="Bóng đá",18:35 09/10 ⚽ Qingdao Hainiu vs Beijing Guoan (Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/2234_zhejiang.jpg" group-title="Bóng đá",19:00 09/10 ⚽ Zhejiang Professional vs Shanghai Port (Gà Rừng BLV) [FHD]
+https://live.khoga.space/live/livehub4/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/18893_al-kholood.jpg" group-title="Bóng đá",20:50 09/10 ⚽ Al Kholood vs Al Qadsiah (Xôi Xoài) [FHD]
+https://live.khoga.space/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/6331_al-fateh.jpg" group-title="Bóng đá",21:55 09/10 ⚽ Al Fateh vs Al Ahli SC (Khô Cay) [FHD]
+https://live.khoga.space/live/livehub9/index.m3u8
