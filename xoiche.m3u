@@ -1,14 +1,10 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/380_tokyo.jpg" group-title="Bóng đá",17:00 07/10 ⚽ FC Tokyo vs Shonan Bellmare (Khô Chè) [FHD]
-https://live.khoga.space/live/livehub5/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5051_urawa-reds.jpg" group-title="Bóng đá",16:00 07/10 ⚽ Urawa Reds vs Omiya Ardija (Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5306_kuching-city.jpg" group-title="Bóng đá",20:00 07/10 ⚽ Kuching City FC vs Tampines (Khô Cay) [FHD]
+https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7565_buriram-united.jpg" group-title="Bóng đá",19:00 07/10 ⚽ Buriram vs Borneo (Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/397_ratchaburi.jpg" group-title="Bóng đá",19:00 07/10 ⚽ Ratchaburi vs Ho Chi Minh (Gà Rừng BLV) [FHD]
 https://live.khoga.space/live/livehub4/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5306_kuching-city.jpg" group-title="Bóng đá",20:00 07/10 ⚽ Kuching City FC vs Tampines (Khô Cay) [FHD]
-https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3541_gnistan.jpg" group-title="Bóng đá",23:00 07/10 ⚽ Gnistan vs Inter Turku (Khô Chè) [FHD]
 https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1745_cruzeiro.jpg" group-title="Bóng đá",07:30 08/10 ⚽ Cruzeiro vs Sao Paulo (Gà Rừng BLV) [FHD]
@@ -71,3 +67,7 @@ https://live.khoga.space/live/livehub4/index.m3u8
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/88_chelsea.jpg" group-title="Bóng đá",21:00 10/10 ⚽ Chelsea vs Bournemouth (Khô Chè) [FHD]
 https://live.khoga.space/live/livehub5/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/97_barcelona.jpg" group-title="Bóng đá",23:30 10/10 ⚽ Barcelona vs Getafe (Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/102_manchester-united.jpg" group-title="Bóng đá",23:30 10/10 ⚽ Manchester Utd vs Tottenham (Xôi Xéo) [FHD]
+https://live.khoga.space/live/livehub1/index.m3u8
