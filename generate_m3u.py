@@ -1,6 +1,6 @@
 from datetime import datetime
 import json
-import requests
+from curl_cffi import requests as curl_requests
 
 BASE_DOMAIN = "https://xoiche2.live"
 INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_stream=true"
@@ -11,10 +11,6 @@ HEADERS = {
     "X-Client-Transport": "obfuscated",
     "Accept": "application/x-obfuscated, application/json, text/plain, */*",
     "Content-Type": "application/json",
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,"
-        " like Gecko) Chrome/128.0.0.0 Safari/537.36"
-    ),
     "Referer": "https://xoiche2.live/",
     "Origin": "https://xoiche2.live",
 }
@@ -44,40 +40,38 @@ def fetch_all_matches():
     matches = []
     current_url = INITIAL_API_URL
 
-    session = requests.Session()
-    session.headers.update(HEADERS)
-
-    # Khởi tạo cloudscraper làm phương án dự phòng
-    try:
-        import cloudscraper
-
-        scraper = cloudscraper.create_scraper(
-            browser={"browser": "chrome", "platform": "windows", "mobile": False}
-        )
-    except Exception as e:
-        print(f"Không thể khởi tạo cloudscraper: {e}", flush=True)
-        scraper = session
-
     while current_url:
         print(f"Đang tải: {current_url}", flush=True)
         try:
-            # Thử bằng requests chuẩn trước
-            res = session.get(current_url, timeout=15)
+            # Dùng impersonate="chrome120" để giả lập TLS fingerprint Chrome thật
+            res = curl_requests.get(
+                current_url,
+                headers=HEADERS,
+                impersonate="chrome120",
+                timeout=20,
+            )
 
-            # Nếu bị Cloudflare chặn thì thử qua cloudscraper
             if res.status_code != 200:
                 print(
-                    f"Requests trả về HTTP {res.status_code}, đang thử lại bằng"
-                    " cloudscraper...",
+                    f"Lỗi API HTTP {res.status_code}. Phản hồi:"
+                    f" {res.text[:200]}",
                     flush=True,
                 )
-                res = scraper.get(current_url, headers=HEADERS, timeout=20)
-
-            if res.status_code != 200:
-                print(f"Lỗi API HTTP {res.status_code}", flush=True)
                 break
 
-            data = res.json()
+            try:
+                data = res.json()
+            except json.JSONDecodeError:
+                print(
+                    "Lỗi: Server vẫn trả về HTML/Cloudflare thay vì JSON.",
+                    flush=True,
+                )
+                print(
+                    f"Nội dung phản hồi (300 ký tự): {res.text[:300]}",
+                    flush=True,
+                )
+                break
+
             results = data.get("results", [])
             print(f"-> Lấy được {len(results)} trận ở trang này.", flush=True)
             matches.extend(results)
