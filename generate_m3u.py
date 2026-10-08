@@ -1,18 +1,22 @@
-from datetime import datetime
 import json
+import time
+from datetime import datetime
 from curl_cffi import requests as curl_requests
 
 BASE_DOMAIN = "https://xoiche2.live"
 INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_stream=true"
 
+# Header chuẩn giả lập duyệt web tự nhiên
 HEADERS = {
-    "X-Site-Id": "xoiche",
-    "X-Site": "xoiche",
-    "X-Client-Transport": "obfuscated",
-    "Accept": "application/x-obfuscated, application/json, text/plain, */*",
-    "Content-Type": "application/json",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
     "Referer": "https://xoiche2.live/",
     "Origin": "https://xoiche2.live",
+    "X-Site-Id": "xoiche",
+    "X-Site": "xoiche",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
 }
 
 
@@ -40,16 +44,29 @@ def fetch_all_matches():
     matches = []
     current_url = INITIAL_API_URL
 
+    # Khởi tạo Session giả lập trình duyệt Chrome
+    session = curl_requests.Session(impersonate="chrome120")
+
+    # BƯỚC 1: Truy cập trang chủ trước để lấy Cookie Session từ Cloudflare
+    print("Đang khởi tạo phiên truy cập trang chủ xoiche2.live...", flush=True)
+    try:
+        init_res = session.get(
+            f"{BASE_DOMAIN}/", headers=HEADERS, timeout=15
+        )
+        print(
+            f"-> Trang chủ trả về HTTP {init_res.status_code}, đã nhận Session"
+            " Cookie.",
+            flush=True,
+        )
+        time.sleep(2)  # Chờ 2 giây tạo độ trễ như người dùng thật
+    except Exception as e:
+        print(f"Lỗi khi khởi tạo Session: {e}", flush=True)
+
+    # BƯỚC 2: Gọi API lấy toàn bộ danh sách trận đấu
     while current_url:
-        print(f"Đang tải: {current_url}", flush=True)
+        print(f"Đang tải API: {current_url}", flush=True)
         try:
-            # Dùng impersonate="chrome120" để giả lập TLS fingerprint Chrome thật
-            res = curl_requests.get(
-                current_url,
-                headers=HEADERS,
-                impersonate="chrome120",
-                timeout=20,
-            )
+            res = session.get(current_url, headers=HEADERS, timeout=20)
 
             if res.status_code != 200:
                 print(
@@ -63,13 +80,10 @@ def fetch_all_matches():
                 data = res.json()
             except json.JSONDecodeError:
                 print(
-                    "Lỗi: Server vẫn trả về HTML/Cloudflare thay vì JSON.",
+                    "Lỗi Decode JSON! Đoạn dữ liệu nhận được:",
                     flush=True,
                 )
-                print(
-                    f"Nội dung phản hồi (300 ký tự): {res.text[:300]}",
-                    flush=True,
-                )
+                print(f"Text (200 ký tự): {res.text[:200]}", flush=True)
                 break
 
             results = data.get("results", [])
