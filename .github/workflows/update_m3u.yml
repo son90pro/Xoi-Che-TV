@@ -15,15 +15,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests cloudscraper
+          pip install requests cloudscraper curl_cffi
 
       - name: Generate M3U File
-        run: python generate_m3u.py
+        run: python -u generate_m3u.py
 
       - name: Commit and Push update
         run: |
@@ -31,3 +31,4 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add xoiche.m3u
           git diff-index --quiet HEAD || (git commit -m "Auto-update playlist [skip ci]" && git push)
+          
