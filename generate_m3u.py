@@ -1,12 +1,14 @@
+import base64
+from datetime import datetime
 import json
 import time
-from datetime import datetime
+import zlib
 from curl_cffi import requests as curl_requests
 
 BASE_DOMAIN = "https://xoiche2.live"
 INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_stream=true"
 
-# Đã BỎ "X-Client-Transport": "obfuscated" để server trả về JSON nguyên bản
+# Header ép server trả về dữ liệu plain JSON
 HEADERS = {
     "Accept": "application/json, text/plain, */*",
     "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
@@ -14,6 +16,7 @@ HEADERS = {
     "Origin": "https://xoiche2.live",
     "X-Site-Id": "xoiche",
     "X-Site": "xoiche",
+    "X-Client-Transport": "plain",
     "Sec-Fetch-Dest": "empty",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Site": "same-origin",
@@ -40,21 +43,68 @@ def format_match_time(time_str):
         return ""
 
 
+def decode_payload(text):
+    """Hàm tự động giải mã dữ liệu nếu server trả về chuỗi mã hóa (Obfuscated)"""
+    if not text:
+        return None
+
+    # 1. Thử parse JSON trực tiếp
+    try:
+        return json.loads(text)
+    except Exception:
+        pass
+
+    # Xóa khoảng trắng & dấu ngoặc kép thừa
+    clean_text = text.strip()
+    if clean_text.startswith('"') and clean_text.endswith('"'):
+        clean_text = clean_text[1:-1]
+
+    # 2. Thử giải mã Base64
+    try:
+        raw_bytes = base64.b64decode(clean_text)
+
+        # 2a. Base64 -> UTF-8 JSON
+        try:
+            return json.loads(raw_bytes.decode("utf-8"))
+        except Exception:
+            pass
+
+        # 2b. Base64 -> Gzip / Zlib
+        for wbits in [16 + zlib.MAX_WBITS, zlib.MAX_WBITS, -zlib.MAX_WBITS]:
+            try:
+                decompressed = zlib.decompress(raw_bytes, wbits)
+                return json.loads(decompressed.decode("utf-8"))
+            except Exception:
+                pass
+
+        # 2c. Base64 -> XOR với các key phổ biến
+        keys = ["xoiche", "xoiche2.live", "obfuscated", "khandai", "khoga"]
+        for key in keys:
+            key_bytes = key.encode("utf-8")
+            xored = bytes(
+                [b ^ key_bytes[i % len(key_bytes)] for i, b in enumerate(raw_bytes)]
+            )
+            try:
+                return json.loads(xored.decode("utf-8"))
+            except Exception:
+                pass
+    except Exception:
+        pass
+
+    return None
+
+
 def fetch_all_matches():
     matches = []
     current_url = INITIAL_API_URL
 
-    # Khởi tạo Session giả lập trình duyệt Chrome
     session = curl_requests.Session(impersonate="chrome120")
 
     print("Đang khởi tạo phiên truy cập trang chủ xoiche2.live...", flush=True)
     try:
-        init_res = session.get(
-            f"{BASE_DOMAIN}/", headers=HEADERS, timeout=15
-        )
+        init_res = session.get(f"{BASE_DOMAIN}/", headers=HEADERS, timeout=15)
         print(
-            f"-> Trang chủ trả về HTTP {init_res.status_code}, đã nhận Session"
-            " Cookie.",
+            f"-> Trang chủ trả về HTTP {init_res.status_code}, đã nhận Session Cookie.",
             flush=True,
         )
         time.sleep(1)
@@ -68,21 +118,24 @@ def fetch_all_matches():
 
             if res.status_code != 200:
                 print(
-                    f"Lỗi API HTTP {res.status_code}. Phản hồi:"
-                    f" {res.text[:200]}",
+                    f"Lỗi API HTTP {res.status_code}. Phản hồi: {res.text[:200]}",
                     flush=True,
                 )
                 break
 
-            try:
-                data = res.json()
-            except json.JSONDecodeError:
-                print("Lỗi Decode JSON! Text:", flush=True)
+            # Tự động nhận diện và giải mã JSON
+            data = decode_payload(res.text)
+
+            if not data or not isinstance(data, dict):
+                print("Không thể giải mã dữ liệu JSON! Phản hồi nhận được:", flush=True)
                 print(f"{res.text[:200]}", flush=True)
                 break
 
             results = data.get("results", [])
-            print(f"-> Lấy được {len(results)} trận ở trang này.", flush=True)
+            print(
+                f"-> Giải mã thành công và lấy được {len(results)} trận ở trang này.",
+                flush=True,
+            )
             matches.extend(results)
 
             next_page = data.get("next")
