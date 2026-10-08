@@ -1,9 +1,7 @@
 from datetime import datetime
 import json
-import re
-import cloudscraper
+import requests
 
-# Đã cập nhật domain mới: xoiche2.live
 BASE_DOMAIN = "https://xoiche2.live"
 INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_stream=true"
 
@@ -23,7 +21,6 @@ HEADERS = {
 
 
 def fix_url(url):
-    """Chuẩn hóa đường dẫn URL"""
     if not url:
         return ""
     if url.startswith("//"):
@@ -34,7 +31,6 @@ def fix_url(url):
 
 
 def format_match_time(time_str):
-    """Chuyển định dạng ISO sang HH:MM DD/MM"""
     if not time_str:
         return ""
     try:
@@ -45,39 +41,45 @@ def format_match_time(time_str):
 
 
 def fetch_all_matches():
-    """Lấy toàn bộ trận đấu từ xoiche2.live qua Cloudscraper"""
     matches = []
     current_url = INITIAL_API_URL
 
-    scraper = cloudscraper.create_scraper(
-        browser={
-            "browser": "chrome",
-            "platform": "windows",
-            "mobile": False,
-        }
-    )
+    session = requests.Session()
+    session.headers.update(HEADERS)
+
+    # Khởi tạo cloudscraper làm phương án dự phòng
+    try:
+        import cloudscraper
+
+        scraper = cloudscraper.create_scraper(
+            browser={"browser": "chrome", "platform": "windows", "mobile": False}
+        )
+    except Exception as e:
+        print(f"Không thể khởi tạo cloudscraper: {e}", flush=True)
+        scraper = session
 
     while current_url:
+        print(f"Đang tải: {current_url}", flush=True)
         try:
-            response = scraper.get(current_url, headers=HEADERS, timeout=20)
+            # Thử bằng requests chuẩn trước
+            res = session.get(current_url, timeout=15)
 
-            if response.status_code != 200:
-                print(f"Lỗi API HTTP {response.status_code}")
+            # Nếu bị Cloudflare chặn thì thử qua cloudscraper
+            if res.status_code != 200:
+                print(
+                    f"Requests trả về HTTP {res.status_code}, đang thử lại bằng"
+                    " cloudscraper...",
+                    flush=True,
+                )
+                res = scraper.get(current_url, headers=HEADERS, timeout=20)
+
+            if res.status_code != 200:
+                print(f"Lỗi API HTTP {res.status_code}", flush=True)
                 break
 
-            try:
-                data = response.json()
-            except json.JSONDecodeError:
-                print(
-                    "Lỗi: Server trả về HTML/Cloudflare Challenge thay vì"
-                    " JSON."
-                )
-                print(
-                    f"Nội dung phản hồi (200 ký tự đầu): {response.text[:200]}"
-                )
-                break
-
+            data = res.json()
             results = data.get("results", [])
+            print(f"-> Lấy được {len(results)} trận ở trang này.", flush=True)
             matches.extend(results)
 
             next_page = data.get("next")
@@ -86,14 +88,13 @@ def fetch_all_matches():
             else:
                 current_url = None
         except Exception as e:
-            print(f"Lỗi khi tải dữ liệu: {e}")
+            print(f"Lỗi khi tải dữ liệu: {e}", flush=True)
             break
 
     return matches
 
 
 def build_m3u_playlist(matches):
-    """Tạo nội dung M3U chuẩn định dạng"""
     m3u_lines = ["#EXTM3U"]
 
     for match in matches:
@@ -148,4 +149,28 @@ def build_m3u_playlist(matches):
 
             extinf = f'#EXTINF:-1 tvg-logo="{logo_url}" group-title="{sport_name}",{title_display}'
             m3u_lines.append(extinf)
-            
+            m3u_lines.append(stream_url)
+
+    return "\n".join(m3u_lines)
+
+
+def main():
+    print("Đang lấy danh sách trận đấu từ xoiche2.live...", flush=True)
+    matches = fetch_all_matches()
+    print(f"Tổng cộng đã tìm thấy {len(matches)} trận đấu.", flush=True)
+
+    if not matches:
+        print("Cảnh báo: Không lấy được trận đấu nào!", flush=True)
+
+    playlist_content = build_m3u_playlist(matches)
+
+    output_filename = "xoiche.m3u"
+    with open(output_filename, "w", encoding="utf-8") as f:
+        f.write(playlist_content)
+
+    print(f"Đã tạo file {output_filename} thành công!", flush=True)
+
+
+if __name__ == "__main__":
+    main()
+    
