@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.11' # Khóa phiên bản 3.11 ổn định nhất
 
       - name: Install dependencies
         run: |
@@ -23,7 +23,7 @@ jobs:
           pip install requests cloudscraper
 
       - name: Generate M3U File
-        run: python generate_m3u.py
+        run: python -u generate_m3u.py # Thêm -u để hiển thị log trực tiếp
 
       - name: Commit and Push update
         run: |
