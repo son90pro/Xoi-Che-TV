@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/377_seoul.jpg" group-title="Bóng đá",12:00 10/10 ⚽ Seoul vs Jeju SK (BLV Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5045_cerezo-osaka.jpg" group-title="Bóng đá",12:00 10/10 ⚽ Cerezo Osaka vs Yokohama F. Marinos (BLV Khô Chè) [FHD]
-https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/nippon-steel-sakai-blazers-vb.png" group-title="Bóng chuyền",15:30 10/10 🏐 Nippon Steel Sakai Blazers vs Wolfdogs Nagoya (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/10421_south-melbourne.jpg" group-title="Bóng đá",15:35 10/10 ⚽ South Melbourne vs Melbourne Victory (BLV Tam Mao) [FHD]
@@ -187,6 +183,10 @@ https://live.khoga.space/live/livehub6/index.m3u8
 https://live.khoga.space/live/livehub2/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/ibk-altos-vb.png" group-title="Bóng chuyền",17:00 15/10 🏐 IBK Altos vs Jung Kwan Jang Red Sparks (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/377_seoul.jpg" group-title="Bóng đá",12:00 10/10 ⚽ Seoul vs Jeju SK (BLV Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5045_cerezo-osaka.jpg" group-title="Bóng đá",12:00 10/10 ⚽ Cerezo Osaka vs Yokohama F. Marinos (BLV Khô Chè) [FHD]
+https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/1791593223804661668_d88a000d.png" group-title="Bóng chuyền",11:00 10/10 🏐 Osaka Bluteon vs JTEKT Stings Aichi (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/275_tigres-uanl.jpg" group-title="Bóng đá",10:00 10/10 ⚽ Tigres UANL vs Toluca (BLV Gà Rừng) [FHD]
