@@ -1,20 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/megabox-vallefoglia-vb.png" group-title="Bóng chuyền",00:30 11/10 🏐 Megabox Vallefoglia vs Savino Del Bene Scandicci (BLV Khô Bò) [FHD]
-https://live.khoga.space/live/livehub12/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/imoco-conegliano-vb.png" group-title="Bóng chuyền",01:30 11/10 🏐 Imoco Conegliano vs Laica UYBA Busto Arsizio (BLV Xôi Gà) [FHD]
-https://live.khoga.space/live/livehub2/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/cucine-lube-civitanova-vb.png" group-title="Bóng chuyền",01:30 11/10 🏐 Cucine Lube Civitanova vs Suntory Sunbirds Osaka (BLV Xôi Bắp) [FHD]
-https://live.khoga.space/live/livehub6/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/152_napoli.jpg" group-title="Bóng đá",01:45 11/10 ⚽ Napoli vs Frosinone (BLV Tày) [FHD]
-https://live.khoga.space/live/livehub10/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3817_monaco.jpg" group-title="Bóng đá",01:45 11/10 ⚽ Monaco vs Toulouse (BLV Xôi Xoài) [FHD]
-https://live.khoga.space/live/livehub3/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/100_psg.jpg" group-title="Bóng đá",01:45 11/10 ⚽ PSG vs Le Mans (BLV Khô Chè) [FHD]
-https://live.khoga.space/live/livehub5/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/76_real-madrid.jpg" group-title="Bóng đá",02:00 11/10 ⚽ Real Madrid vs Villarreal (BLV Khô Cay) [FHD]
-https://live.khoga.space/live/livehub9/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5995_maritimo.jpg" group-title="Bóng đá",00:00 11/10 ⚽ Maritimo vs FC Porto (BLV Xôi Gấc) [FHD]
-https://live.khoga.space/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7953_inter-miami.jpg" group-title="Bóng đá",06:30 11/10 ⚽ Inter Miami vs DC United (BLV Gà Rừng) [FHD]
 https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/284_club-america.jpg" group-title="Bóng đá",10:10 11/10 ⚽ Club America vs Monterrey (BLV Xôi Gấc) [FHD]
@@ -149,6 +133,22 @@ https://live.khoga.space/live/livehub6/index.m3u8
 https://live.khoga.space/live/livehub2/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/ibk-altos-vb.png" group-title="Bóng chuyền",17:00 15/10 🏐 IBK Altos vs Jung Kwan Jang Red Sparks (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/76_real-madrid.jpg" group-title="Bóng đá",02:00 11/10 ⚽ Real Madrid vs Villarreal (BLV Khô Cay) [FHD]
+https://live.khoga.space/live/livehub9/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/152_napoli.jpg" group-title="Bóng đá",01:45 11/10 ⚽ Napoli vs Frosinone (BLV Tày) [FHD]
+https://live.khoga.space/live/livehub10/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3817_monaco.jpg" group-title="Bóng đá",01:45 11/10 ⚽ Monaco vs Toulouse (BLV Xôi Xoài) [FHD]
+https://live.khoga.space/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/100_psg.jpg" group-title="Bóng đá",01:45 11/10 ⚽ PSG vs Le Mans (BLV Khô Chè) [FHD]
+https://live.khoga.space/live/livehub5/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/imoco-conegliano-vb.png" group-title="Bóng chuyền",01:30 11/10 🏐 Imoco Conegliano vs Laica UYBA Busto Arsizio (Nhà Đài) [FHD]
+https://live.khoga.space/live/livehub2/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/cucine-lube-civitanova-vb.png" group-title="Bóng chuyền",01:30 11/10 🏐 Cucine Lube Civitanova vs Suntory Sunbirds Osaka (Nhà Đài) [FHD]
+https://live.khoga.space/live/livehub6/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/megabox-vallefoglia-vb.png" group-title="Bóng chuyền",00:30 11/10 🏐 Megabox Vallefoglia vs Savino Del Bene Scandicci (BLV Khô Bò) [FHD]
+https://live.khoga.space/live/livehub12/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5995_maritimo.jpg" group-title="Bóng đá",00:00 11/10 ⚽ Maritimo vs FC Porto (BLV Xôi Gấc) [FHD]
+https://live.khoga.space/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/97_barcelona.jpg" group-title="Bóng đá",23:30 10/10 ⚽ Barcelona vs Getafe (BLV Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/102_manchester-united.jpg" group-title="Bóng đá",23:30 10/10 ⚽ Manchester Utd vs Tottenham (BLV Tày) [FHD]
