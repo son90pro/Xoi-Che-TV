@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7953_inter-miami.jpg" group-title="Bóng đá",06:30 11/10 ⚽ Inter Miami vs DC United (BLV Gà Rừng) [FHD]
-https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/284_club-america.jpg" group-title="Bóng đá",10:10 11/10 ⚽ Club America vs Monterrey (BLV Xôi Gấc) [FHD]
 https://live.khoga.space/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5172_gwangju.jpg" group-title="Bóng đá",12:00 11/10 ⚽ Gwangju FC vs Ulsan HD (BLV Tam Mao) [FHD]
@@ -11,8 +9,8 @@ https://live.khoga.space/live/livehub9/index.m3u8
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/192_galatasaray.jpg" group-title="Bóng chuyền",17:00 11/10 🏐 Galatasaray Daikin vs Nilüfer Belediyespor Eker (BLV Tày) [FHD]
 https://live.khoga.space/live/livehub10/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8239_como.jpg" group-title="Bóng đá",17:30 11/10 ⚽ Como vs AS Roma (BLV Gà Rừng) [FHD]
-https://live.khoga.space/live/livehub4/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8239_como.jpg" group-title="Bóng đá",17:30 11/10 ⚽ Como vs AS Roma (BLV Khô Mật) [FHD]
+https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8058_song-lam-ngh-an.jpg" group-title="Bóng đá",18:00 11/10 ⚽ Song Lam Nghe An vs Ho Chi Minh (BLV Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7274_elche.jpg" group-title="Bóng đá",19:00 11/10 ⚽ Elche vs Celta Vigo (BLV Khô Chè) [FHD]
@@ -23,8 +21,8 @@ https://live.khoga.space/live/livehub12/index.m3u8
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3429_crystal-palace.jpg" group-title="Bóng đá",20:00 11/10 ⚽ Crystal Palace vs Nottingham (BLV Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3119_hull-city.jpg" group-title="Bóng đá",20:00 11/10 ⚽ Hull vs Everton (BLV Gà Rừng) [FHD]
-https://live.khoga.space/live/livehub4/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3119_hull-city.jpg" group-title="Bóng đá",20:00 11/10 ⚽ Hull vs Everton (BLV Khô Mật) [FHD]
+https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/goztepe-yuppo-vb.png" group-title="Bóng chuyền",20:00 11/10 🏐 Göztepe Yuppo vs VakıfBank (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3932_koln.jpg" group-title="Bóng đá",20:30 11/10 ⚽ FC Koln vs B. Monchengladbach (BLV Xôi Gấc) [FHD]
@@ -45,8 +43,8 @@ https://live.khoga.space/live/livehub6/index.m3u8
 https://live.khoga.space/live/livehub12/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7261_real-betis.jpg" group-title="Bóng đá",23:30 11/10 ⚽ Betis vs Osasuna (BLV Xôi Gấc) [FHD]
 https://live.khoga.space/live/livehub11/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/147_benfica.jpg" group-title="Bóng đá",00:00 12/10 ⚽ Benfica vs Vitoria Guimaraes (BLV Gà Rừng) [FHD]
-https://live.khoga.space/live/livehub4/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/147_benfica.jpg" group-title="Bóng đá",00:00 12/10 ⚽ Benfica vs Vitoria Guimaraes (BLV Khô Mật) [FHD]
+https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4981_cagliari.jpg" group-title="Bóng đá",01:45 12/10 ⚽ Cagliari vs Juventus (BLV Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3792_troyes.jpg" group-title="Bóng đá",01:45 12/10 ⚽ Troyes vs Marseille (BLV Khô Chè) [FHD]
@@ -61,8 +59,8 @@ https://live.khoga.space/live/livehub11/index.m3u8
 https://live.khoga.space/live/livehub10/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7262_real-valladolid.jpg" group-title="Bóng đá",19:00 12/10 ⚽ Valladolid vs Albacete (BLV Khô Bò) [FHD]
 https://live.khoga.space/live/livehub12/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/363_pakhtakor.jpg" group-title="Bóng đá",20:45 12/10 ⚽ Pakhtakor vs Al Qadsiah (BLV Gà Rừng) [FHD]
-https://live.khoga.space/live/livehub4/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/363_pakhtakor.jpg" group-title="Bóng đá",20:45 12/10 ⚽ Pakhtakor vs Al Qadsiah (BLV Khô Mật) [FHD]
+https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/ziraat-bankkart-vb.png" group-title="Bóng chuyền",21:00 12/10 🏐 Ziraat Bankkart vs Galatasaray (BLV Xôi Gà) [FHD]
 https://live.khoga.space/live/livehub2/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7206_burgos.jpg" group-title="Bóng đá",21:15 12/10 ⚽ Burgos CF vs Granada CF (BLV Tam Mao) [FHD]
@@ -73,8 +71,8 @@ https://live.khoga.space/live/livehub3/index.m3u8
 https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7828_al-wasl.jpg" group-title="Bóng đá",23:00 12/10 ⚽ Al Wasl vs Al Ahli SC (BLV Tày) [FHD]
 https://live.khoga.space/live/livehub10/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/414_tractor.jpg" group-title="Bóng đá",23:00 12/10 ⚽ Tractor vs Shamal (BLV Gà Rừng) [FHD]
-https://live.khoga.space/live/livehub4/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/414_tractor.jpg" group-title="Bóng đá",23:00 12/10 ⚽ Tractor vs Shamal (BLV Khô Mật) [FHD]
+https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3555_oulu.jpg" group-title="Bóng đá",23:00 12/10 ⚽ AC Oulu vs HJK (BLV Khô Chè) [FHD]
 https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7282_real-oviedo.jpg" group-title="Bóng đá",23:30 12/10 ⚽ Oviedo vs Eibar (BLV Khô Bò) [FHD]
@@ -93,13 +91,13 @@ https://live.khoga.space/live/livehub9/index.m3u8
 https://live.khoga.space/live/livehub12/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3094_coventry-city.jpg" group-title="Bóng đá",02:00 13/10 ⚽ Coventry vs Newcastle (BLV Xôi Gấc) [FHD]
 https://live.khoga.space/live/livehub11/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/2015_rb-bragantino.jpg" group-title="Bóng đá",07:00 13/10 ⚽ Bragantino vs Cruzeiro (BLV Gà Rừng) [FHD]
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/2015_rb-bragantino.jpg" group-title="Bóng đá",07:00 13/10 ⚽ Bragantino vs Cruzeiro (Nhà Đài) [FHD]
 https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1056_newcastle-jets-fc.jpg" group-title="Bóng đá",14:45 13/10 ⚽ Newcastle Jets vs Gamba Osaka (BLV Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/heungkuk-life-pink-spiders-vb.png" group-title="Bóng chuyền",17:00 13/10 🏐 Heungkuk Life Pink Spiders vs IBK Altos (BLV Tày) [FHD]
 https://live.khoga.space/live/livehub10/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5078_kyoto-sanga.jpg" group-title="Bóng đá",17:00 13/10 ⚽ Kyoto vs Ratchaburi (BLV Gà Rừng) [FHD]
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5078_kyoto-sanga.jpg" group-title="Bóng đá",17:00 13/10 ⚽ Kyoto vs Ratchaburi (Nhà Đài) [FHD]
 https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/396_pohang-steelers.jpg" group-title="Bóng đá",17:00 13/10 ⚽ Pohang vs Johor DT (BLV Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
@@ -109,7 +107,7 @@ https://live.khoga.space/live/livehub12/index.m3u8
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8045_cong-an-ha-ni.jpg" group-title="Bóng đá",19:15 13/10 ⚽ Cong An Ha Noi vs Kashima Antlers (BLV Khô Chè) [FHD]
 https://live.khoga.space/live/livehub5/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/31289_east-bengal-ii.jpg" group-title="Bóng đá",20:45 13/10 ⚽ East Bengal vs Al Shorta (BLV Gà Rừng) [FHD]
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/31289_east-bengal-ii.jpg" group-title="Bóng đá",20:45 13/10 ⚽ East Bengal vs Al Shorta (Nhà Đài) [FHD]
 https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/372_al-sadd.jpg" group-title="Bóng đá",23:00 13/10 ⚽ Al-Sadd vs Al Hilal (BLV Xôi Gấc) [FHD]
 https://live.khoga.space/live/livehub11/index.m3u8
@@ -133,6 +131,8 @@ https://live.khoga.space/live/livehub6/index.m3u8
 https://live.khoga.space/live/livehub2/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/ibk-altos-vb.png" group-title="Bóng chuyền",17:00 15/10 🏐 IBK Altos vs Jung Kwan Jang Red Sparks (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7953_inter-miami.jpg" group-title="Bóng đá",06:30 11/10 ⚽ Inter Miami vs DC United (BLV Gà Rừng) [FHD]
+https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/76_real-madrid.jpg" group-title="Bóng đá",02:00 11/10 ⚽ Real Madrid vs Villarreal (BLV Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/152_napoli.jpg" group-title="Bóng đá",01:45 11/10 ⚽ Napoli vs Frosinone (BLV Tày) [FHD]
