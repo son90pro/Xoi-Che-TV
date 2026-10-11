@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/284_club-america.jpg" group-title="Bóng đá",10:10 11/10 ⚽ Club America vs Monterrey (BLV Xôi Gấc) [FHD]
-https://live.khoga.space/live/livehub11/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5172_gwangju.jpg" group-title="Bóng đá",12:00 11/10 ⚽ Gwangju FC vs Ulsan HD (BLV Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/417_kawasaki-frontale.jpg" group-title="Bóng đá",14:00 11/10 ⚽ Kawasaki Frontale vs Nagoya Grampus (BLV Khô Cay) [FHD]
-https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/saga-hisamitsu-springs-vb.png" group-title="Bóng chuyền",16:05 11/10 🏐 SAGA Hisamitsu Springs vs Queenseis Kariya (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/192_galatasaray.jpg" group-title="Bóng chuyền",17:00 11/10 🏐 Galatasaray Daikin vs Nilüfer Belediyespor Eker (BLV Tày) [FHD]
@@ -131,6 +125,12 @@ https://live.khoga.space/live/livehub6/index.m3u8
 https://live.khoga.space/live/livehub2/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/ibk-altos-vb.png" group-title="Bóng chuyền",17:00 15/10 🏐 IBK Altos vs Jung Kwan Jang Red Sparks (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/417_kawasaki-frontale.jpg" group-title="Bóng đá",14:00 11/10 ⚽ Kawasaki Frontale vs Nagoya Grampus (BLV Khô Cay) [FHD]
+https://live.khoga.space/live/livehub9/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5172_gwangju.jpg" group-title="Bóng đá",12:00 11/10 ⚽ Gwangju FC vs Ulsan HD (BLV Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/284_club-america.jpg" group-title="Bóng đá",10:10 11/10 ⚽ Club America vs Monterrey (BLV Xôi Gấc) [FHD]
+https://live.khoga.space/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7953_inter-miami.jpg" group-title="Bóng đá",06:30 11/10 ⚽ Inter Miami vs DC United (BLV Gà Rừng) [FHD]
 https://live.khoga.space/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/76_real-madrid.jpg" group-title="Bóng đá",02:00 11/10 ⚽ Real Madrid vs Villarreal (BLV Khô Cay) [FHD]
