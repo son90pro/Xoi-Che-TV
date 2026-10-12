@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5352_pachuca.jpg" group-title="Bóng đá",06:10 12/10 ⚽ Pachuca vs Necaxa (Nhà Đài) [FHD]
-https://live.khoga.space/live/livehub9/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5354_pumas-unam.jpg" group-title="Bóng đá",08:15 12/10 ⚽ UNAM Pumas vs Cruz Azul (BLV Xôi Gấc) [FHD]
-https://live.khoga.space/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/gs-caltex-seoul-kixx-vb.png" group-title="Bóng chuyền",17:00 12/10 🏐 GS Caltex Seoul KIXX vs Korea Expressway Hi-Pass (BLV Tày) [FHD]
 https://live.khoga.space/live/livehub10/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7262_real-valladolid.jpg" group-title="Bóng đá",19:00 12/10 ⚽ Valladolid vs Albacete (BLV Khô Bò) [FHD]
@@ -79,6 +75,10 @@ https://live.khoga.space/live/livehub6/index.m3u8
 https://live.khoga.space/live/livehub2/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/ibk-altos-vb.png" group-title="Bóng chuyền",17:00 15/10 🏐 IBK Altos vs Jung Kwan Jang Red Sparks (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5354_pumas-unam.jpg" group-title="Bóng đá",08:15 12/10 ⚽ UNAM Pumas vs Cruz Azul (BLV Xôi Gấc) [FHD]
+https://live.khoga.space/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5352_pachuca.jpg" group-title="Bóng đá",06:10 12/10 ⚽ Pachuca vs Necaxa (Nhà Đài) [FHD]
+https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7220_racing-de-santander.jpg" group-title="Bóng đá",02:00 12/10 ⚽ Racing Santander vs Valencia (BLV Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4981_cagliari.jpg" group-title="Bóng đá",01:45 12/10 ⚽ Cagliari vs Juventus (BLV Tam Mao) [FHD]
