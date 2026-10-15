@@ -1,8 +1,8 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7953_inter-miami.jpg" group-title="Bóng đá",06:30 15/10 ⚽ Inter Miami vs New York City (BLV Khô Mật) [FHD]
-https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1879_fluminense.jpg" group-title="Bóng đá",07:30 15/10 ⚽ Fluminense vs Palmeiras (BLV Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7953_inter-miami.jpg" group-title="Bóng đá",06:30 15/10 ⚽ Inter Miami vs New York City (BLV Khô Mật) [FHD]
+https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/ibk-altos-vb.png" group-title="Bóng chuyền",17:00 15/10 🏐 IBK Altos vs Jung Kwan Jang Red Sparks (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5171_gangwon.jpg" group-title="Bóng đá",17:00 15/10 ⚽ Gangwon vs Phnom Penh Crown (BLV Tày) [FHD]
@@ -29,6 +29,10 @@ https://live.khoga.space/live/livehub10/index.m3u8
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/83_olympique-marseille.jpg" group-title="Bóng đá",02:00 16/10 ⚽ Marseille vs Olympiacos Piraeus (BLV Khô Chè) [FHD]
 https://live.khoga.space/live/livehub5/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/989_estudiantes.jpg" group-title="Bóng đá",07:30 16/10 ⚽ Estudiantes L.P. vs Flamengo RJ (BLV Khô Mật) [FHD]
+https://live.khoga.space/live/livehub13/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/16129_al-riyadh.jpg" group-title="Bóng đá",22:00 16/10 ⚽ Al Riyadh vs Al Hilal (BLV Khô Mật) [FHD]
+https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3914_holstein-kiel.jpg" group-title="Bóng đá",23:30 16/10 ⚽ Holstein Kiel vs Hertha Berlin (BLV Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/139_roma.jpg" group-title="Bóng đá",02:00 15/10 ⚽ AS Roma vs Real Madrid (BLV Khô Cay) [FHD]
