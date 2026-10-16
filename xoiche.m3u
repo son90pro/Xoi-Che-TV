@@ -1,18 +1,14 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/2255_henan.jpg" group-title="Bóng đá",18:35 16/10 ⚽ Henan Songshan Longmen vs Tianjin Jinmen Tiger (BLV Xôi Gấc) [FHD]
-https://live.khoga.space/live/livehub11/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/hyundai-e-c-hillstate-vb.png" group-title="Bóng chuyền",17:00 16/10 🏐 Hyundai E&C Hillstate vs GS Caltex Seoul KIXX (BLV Tày) [FHD]
-https://live.khoga.space/live/livehub10/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/16129_al-riyadh.jpg" group-title="Bóng đá",22:00 16/10 ⚽ Al Riyadh vs Al Hilal (BLV Khô Mật) [FHD]
-https://live.khoga.space/live/livehub13/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/gks-katowice-vb.png" group-title="Bóng chuyền",22:30 16/10 🏐 GKS Katowice vs Aluron CMC Warta Zawiercie (BLV Xôi Bắp) [FHD]
-https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3914_holstein-kiel.jpg" group-title="Bóng đá",23:30 16/10 ⚽ Holstein Kiel vs Hertha Berlin (BLV Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/pge-projekt-warszawa-vb.png" group-title="Bóng chuyền",01:30 17/10 🏐 PGE Projekt Warszawa vs Energa Indykpol AZS Olsztyn (BLV Khô Bò) [FHD]
+https://live.khoga.space/live/livehub12/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3945_eintracht-frankfurt.jpg" group-title="Bóng đá",01:30 17/10 ⚽ Eintracht Frankfurt vs FC Koln (BLV Khô Chè) [FHD]
 https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5000_frosinone.jpg" group-title="Bóng đá",01:45 17/10 ⚽ Frosinone vs Sassuolo (BLV Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3884_le-mans.jpg" group-title="Bóng đá",01:45 17/10 ⚽ Le Mans vs Toulouse (BLV Xôi Bắp) [FHD]
+https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7200_deportivo-de-la-coruna.jpg" group-title="Bóng đá",02:00 17/10 ⚽ Dep. A Coruna vs Levante (BLV Xôi Gấc) [FHD]
 https://live.khoga.space/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5350_tijuana.jpg" group-title="Bóng đá",10:05 17/10 ⚽ Club Tijuana vs Puebla (BLV Khô Cay) [FHD]
@@ -21,10 +17,14 @@ https://live.khoga.space/live/livehub9/index.m3u8
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/saitama-ageo-medics-vb.png" group-title="Bóng chuyền",11:05 17/10 🏐 Saitama Ageo Medics vs Denso Airybees (BLV Tày) [FHD]
 https://live.khoga.space/live/livehub10/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/pfu-bluecats-vb.png" group-title="Bóng chuyền",11:05 17/10 🏐 PFU BlueCats vs Toray Arrows Shiga (BLV Khô Bò) [FHD]
+https://live.khoga.space/live/livehub12/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/tokyo-great-bears-vb.png" group-title="Bóng chuyền",12:05 17/10 🏐 Tokyo Great Bears vs Hokkaido Yellow Stars (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1053_macarthur-fc.jpg" group-title="Bóng đá",13:00 17/10 ⚽ Macarthur FC vs Perth Glory (BLV Khô Mật) [FHD]
 https://live.khoga.space/live/livehub13/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/379_ulsan-hd.jpg" group-title="Bóng đá",14:30 17/10 ⚽ Ulsan HD vs Bucheon FC 1995 (BLV Khô Bò) [FHD]
+https://live.khoga.space/live/livehub12/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1050_central-coast-mariners.jpg" group-title="Bóng đá",15:40 17/10 ⚽ Central Coast Mariners vs Newcastle Jets (BLV Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/nec-red-rockets-kawasaki-vb.png" group-title="Bóng chuyền",16:35 17/10 🏐 NEC Red Rockets Kawasaki vs Victorina Himeji (BLV Tày) [FHD]
@@ -57,6 +57,8 @@ https://live.khoga.space/live/livehub13/index.m3u8
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/160_lille.jpg" group-title="Bóng đá",01:45 18/10 ⚽ Lille vs Brest (BLV Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3792_troyes.jpg" group-title="Bóng đá",01:45 18/10 ⚽ Troyes vs Lens (BLV Khô Bò) [FHD]
+https://live.khoga.space/live/livehub12/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7272_valencia.jpg" group-title="Bóng đá",02:00 18/10 ⚽ Valencia vs Ath Bilbao (BLV Tày) [FHD]
 https://live.khoga.space/live/livehub10/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/299_atlanta-united.jpg" group-title="Bóng đá",06:30 18/10 ⚽ Atlanta Utd vs Inter Miami (BLV Xôi Xoài) [FHD]
@@ -81,6 +83,10 @@ https://live.khoga.space/live/livehub11/index.m3u8
 https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7267_malaga.jpg" group-title="Bóng đá",23:30 18/10 ⚽ Malaga vs Real Sociedad (BLV Xôi Gấc) [FHD]
 https://live.khoga.space/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/2255_henan.jpg" group-title="Bóng đá",18:35 16/10 ⚽ Henan Songshan Longmen vs Tianjin Jinmen Tiger (BLV Xôi Gấc) [FHD]
+https://live.khoga.space/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/hyundai-e-c-hillstate-vb.png" group-title="Bóng chuyền",17:00 16/10 🏐 Hyundai E&C Hillstate vs GS Caltex Seoul KIXX (BLV Tày) [FHD]
+https://live.khoga.space/live/livehub10/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/390_sydney.jpg" group-title="Bóng đá",16:00 16/10 ⚽ Sydney FC vs WS Wanderers (BLV Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8804_psim-yogyakarta.jpg" group-title="Bóng đá",15:30 16/10 ⚽ PSIM Yogyakarta vs PSM Makassar (BLV Khô Cay) [FHD]
