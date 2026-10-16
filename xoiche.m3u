@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3914_holstein-kiel.jpg" group-title="Bóng đá",23:30 16/10 ⚽ Holstein Kiel vs Hertha Berlin (BLV Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/pge-projekt-warszawa-vb.png" group-title="Bóng chuyền",01:30 17/10 🏐 PGE Projekt Warszawa vs Energa Indykpol AZS Olsztyn (BLV Khô Bò) [FHD]
 https://live.khoga.space/live/livehub12/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3945_eintracht-frankfurt.jpg" group-title="Bóng đá",01:30 17/10 ⚽ Eintracht Frankfurt vs FC Koln (BLV Khô Chè) [FHD]
@@ -29,6 +27,8 @@ https://live.khoga.space/live/livehub12/index.m3u8
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/nec-red-rockets-kawasaki-vb.png" group-title="Bóng chuyền",16:35 17/10 🏐 NEC Red Rockets Kawasaki vs Victorina Himeji (BLV Tày) [FHD]
 https://live.khoga.space/live/livehub10/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5055_kashiwa-reysol.jpg" group-title="Bóng đá",17:00 17/10 ⚽ Kashiwa Reysol vs Nagoya Grampus (BLV Xôi Bắp) [FHD]
+https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3073_everton.jpg" group-title="Bóng đá",18:30 17/10 ⚽ Everton vs Chelsea (BLV Khô Chè) [FHD]
 https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7268_espanyol.jpg" group-title="Bóng đá",19:00 17/10 ⚽ Espanyol vs Atl. Madrid (BLV Xôi Gấc) [FHD]
@@ -69,8 +69,12 @@ https://live.khoga.space/live/livehub11/index.m3u8
 https://live.khoga.space/live/livehub10/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5085_machida-zelvia.jpg" group-title="Bóng đá",14:00 18/10 ⚽ Machida vs Avispa Fukuoka (BLV Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/377_seoul.jpg" group-title="Bóng đá",14:30 18/10 ⚽ Seoul vs Gimcheon Sangmu (BLV Xôi Bắp) [FHD]
+https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4984_udinese.jpg" group-title="Bóng đá",17:30 18/10 ⚽ Udinese vs Lecce (BLV Tày) [FHD]
 https://live.khoga.space/live/livehub10/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7269_osasuna.jpg" group-title="Bóng đá",19:00 18/10 ⚽ Osasuna vs Racing Santander (BLV Xôi Bắp) [FHD]
+https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8045_cong-an-ha-ni.jpg" group-title="Bóng đá",19:15 18/10 ⚽ Cong An Ha Noi vs Hanoi FC (BLV Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3079_brighton--hove-albion.jpg" group-title="Bóng đá",20:00 18/10 ⚽ Brighton vs Crystal Palace (BLV Xôi Xoài) [FHD]
@@ -83,6 +87,8 @@ https://live.khoga.space/live/livehub11/index.m3u8
 https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7267_malaga.jpg" group-title="Bóng đá",23:30 18/10 ⚽ Malaga vs Real Sociedad (BLV Xôi Gấc) [FHD]
 https://live.khoga.space/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3914_holstein-kiel.jpg" group-title="Bóng đá",23:30 16/10 ⚽ Holstein Kiel vs Hertha Berlin (BLV Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/2255_henan.jpg" group-title="Bóng đá",18:35 16/10 ⚽ Henan Songshan Longmen vs Tianjin Jinmen Tiger (BLV Xôi Gấc) [FHD]
 https://live.khoga.space/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/hyundai-e-c-hillstate-vb.png" group-title="Bóng chuyền",17:00 16/10 🏐 Hyundai E&C Hillstate vs GS Caltex Seoul KIXX (BLV Tày) [FHD]
