@@ -1,18 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/tokyo-great-bears-vb.png" group-title="Bóng chuyền",12:05 17/10 🏐 Tokyo Great Bears vs Hokkaido Yellow Stars (BLV Xôi Bắp) [FHD]
-https://live.khoga.space/live/livehub6/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/astemo-rivale-ibaraki-vb.png" group-title="Bóng chuyền",12:05 17/10 🏐 Astemo Rivale Ibaraki vs Gunma Green Wings (BLV Tày) [FHD]
-https://live.khoga.space/live/livehub10/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1053_macarthur-fc.jpg" group-title="Bóng đá",13:00 17/10 ⚽ Macarthur FC vs Perth Glory (BLV Khô Mật) [FHD]
-https://live.khoga.space/live/livehub13/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/36856_auckland.jpg" group-title="Bóng đá",11:00 17/10 ⚽ Auckland FC vs Melbourne City (BLV Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/pfu-bluecats-vb.png" group-title="Bóng chuyền",11:05 17/10 🏐 PFU BlueCats vs Toray Arrows Shiga (BLV Khô Bò) [FHD]
-https://live.khoga.space/live/livehub12/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/379_ulsan-hd.jpg" group-title="Bóng đá",14:30 17/10 ⚽ Ulsan HD vs Bucheon FC 1995 (BLV Khô Bò) [FHD]
-https://live.khoga.space/live/livehub12/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1050_central-coast-mariners.jpg" group-title="Bóng đá",15:40 17/10 ⚽ Central Coast Mariners vs Newcastle Jets (BLV Xôi Xoài) [FHD]
-https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5055_kashiwa-reysol.jpg" group-title="Bóng đá",17:00 17/10 ⚽ Kashiwa Reysol vs Nagoya Grampus (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3073_everton.jpg" group-title="Bóng đá",18:30 17/10 ⚽ Everton vs Chelsea (BLV Khô Chè) [FHD]
@@ -96,6 +82,18 @@ https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/308_monterrey.jpg" group-title="Bóng đá",08:00 19/10 ⚽ Monterrey vs Pachuca (BLV Khô Mật) [FHD]
 https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/6221_rodina-moskva.jpg" group-title="Bóng đá",23:30 19/10 ⚽ Rodina Moscow vs Orenburg (BLV Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1050_central-coast-mariners.jpg" group-title="Bóng đá",15:40 17/10 ⚽ Central Coast Mariners vs Newcastle Jets (BLV Xôi Xoài) [FHD]
+https://live.khoga.space/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/379_ulsan-hd.jpg" group-title="Bóng đá",14:30 17/10 ⚽ Ulsan HD vs Bucheon FC 1995 (BLV Khô Bò) [FHD]
+https://live.khoga.space/live/livehub12/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1053_macarthur-fc.jpg" group-title="Bóng đá",13:00 17/10 ⚽ Macarthur FC vs Perth Glory (BLV Khô Mật) [FHD]
+https://live.khoga.space/live/livehub13/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/astemo-rivale-ibaraki-vb.png" group-title="Bóng chuyền",12:05 17/10 🏐 Astemo Rivale Ibaraki vs Gunma Green Wings (BLV Tày) [FHD]
+https://live.khoga.space/live/livehub10/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/pfu-bluecats-vb.png" group-title="Bóng chuyền",11:05 17/10 🏐 PFU BlueCats vs Toray Arrows Shiga (BLV Khô Bò) [FHD]
+https://live.khoga.space/live/livehub12/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/36856_auckland.jpg" group-title="Bóng đá",11:00 17/10 ⚽ Auckland FC vs Melbourne City (BLV Tam Mao) [FHD]
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5350_tijuana.jpg" group-title="Bóng đá",10:05 17/10 ⚽ Club Tijuana vs Puebla (BLV Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
