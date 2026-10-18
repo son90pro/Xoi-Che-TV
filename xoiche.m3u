@@ -1,22 +1,12 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5084_fagiano-okayama.jpg" group-title="Bóng đá",11:55 18/10 ⚽ Okayama vs Vissel Kobe (BLV Khô Cay) [FHD]
-https://live.khoga.space/live/livehub9/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/astemo-rivale-ibaraki-vb.png" group-title="Bóng chuyền",12:05 18/10 🏐 Astemo Rivale Ibaraki vs Gunma Green Wings (BLV Khô Bò) [FHD]
-https://live.khoga.space/live/livehub12/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/nec-red-rockets-kawasaki-vb.png" group-title="Bóng chuyền",13:35 18/10 🏐 NEC Red Rockets Kawasaki vs Victorina Himeji (BLV Xôi Bắp) [FHD]
-https://live.khoga.space/live/livehub6/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5085_machida-zelvia.jpg" group-title="Bóng đá",14:00 18/10 ⚽ Machida vs Avispa Fukuoka (BLV Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4727_persebaya-surabaya.jpg" group-title="Bóng đá",15:30 18/10 ⚽ Persebaya vs PSS Sleman (BLV Xôi Gấc) [FHD]
-https://live.khoga.space/live/livehub11/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/11814_wuhan-three-towns.jpg" group-title="Bóng đá",17:00 18/10 ⚽ Wuhan Three Towns vs Shanghai Shenhua (BLV Tam Mao) [FHD]
-https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4984_udinese.jpg" group-title="Bóng đá",17:30 18/10 ⚽ Udinese vs Lecce (BLV Khô Mật) [FHD]
 https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8051_ninh-binh.jpg" group-title="Bóng đá",18:00 18/10 ⚽ Phu Dong Ninh Binh vs Gia Lai (BLV Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7269_osasuna.jpg" group-title="Bóng đá",19:00 18/10 ⚽ Osasuna vs Racing Santander (BLV Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/11814_wuhan-three-towns.jpg" group-title="Bóng đá",17:00 18/10 ⚽ Wuhan Three Towns vs Shanghai Shenhua (BLV Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/zaksa-kedzierzyn-kozle-vb.png" group-title="Bóng chuyền",20:00 18/10 🏐 ZAKSA Kędzierzyn-Koźle vs BOGDANKA LUK Lublin (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4974_fiorentina.jpg" group-title="Bóng đá",20:00 18/10 ⚽ Fiorentina vs Como (BLV Khô Cay) [FHD]
@@ -89,6 +79,14 @@ https://live.khoga.space/live/livehub11/index.m3u8
 https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5051_urawa-reds.jpg" group-title="Bóng đá",17:30 21/10 ⚽ Urawa Reds vs Chiba (BLV Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4727_persebaya-surabaya.jpg" group-title="Bóng đá",15:30 18/10 ⚽ Persebaya vs PSS Sleman (BLV Xôi Gấc) [FHD]
+https://live.khoga.space/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5085_machida-zelvia.jpg" group-title="Bóng đá",14:00 18/10 ⚽ Machida vs Avispa Fukuoka (BLV Tam Mao) [FHD]
+https://live.khoga.space/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/astemo-rivale-ibaraki-vb.png" group-title="Bóng chuyền",12:05 18/10 🏐 Astemo Rivale Ibaraki vs Gunma Green Wings (BLV Khô Bò) [FHD]
+https://live.khoga.space/live/livehub12/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5084_fagiano-okayama.jpg" group-title="Bóng đá",11:55 18/10 ⚽ Okayama vs Vissel Kobe (BLV Khô Cay) [FHD]
+https://live.khoga.space/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/301_cruz-azul.jpg" group-title="Bóng đá",10:10 18/10 ⚽ Cruz Azul vs Juarez (BLV Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1054_wellington-phoenix.jpg" group-title="Bóng đá",09:00 18/10 ⚽ Wellington Phoenix vs Melbourne Victory (BLV Xôi Gấc) [FHD]
