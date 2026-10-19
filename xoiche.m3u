@@ -15,12 +15,16 @@ https://live.khoga.space/live/livehub9/index.m3u8
 https://live.khoga.space/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/6221_rodina-moskva.jpg" group-title="Bóng đá",23:30 19/10 ⚽ Rodina Moscow vs Orenburg (BLV Khô Bò) [FHD]
 https://live.khoga.space/live/livehub12/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4990_monza.jpg" group-title="Bóng đá",23:30 19/10 ⚽ Monza vs Cagliari (BLV Khô Chè) [FHD]
+https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7689_trabzonspor.jpg" group-title="Bóng đá",00:00 20/10 ⚽ Trabzonspor vs Besiktas (BLV Xôi Gấc) [FHD]
 https://live.khoga.space/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/366_al-hilal-fc.jpg" group-title="Bóng đá",01:00 20/10 ⚽ Al Hilal vs Al Hazem (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4978_parma.jpg" group-title="Bóng đá",01:45 20/10 ⚽ Parma vs Torino (BLV Khô Cay) [FHD]
 https://live.khoga.space/live/livehub9/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7288_getafe.jpg" group-title="Bóng đá",02:00 20/10 ⚽ Getafe vs Rayo Vallecano (BLV Khô Chè) [FHD]
+https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/164_tottenham-hotspur.jpg" group-title="Bóng đá",02:00 20/10 ⚽ Tottenham vs Coventry (BLV Xôi Xoài) [FHD]
 https://live.khoga.space/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/30434_fortis.jpg" group-title="Bóng đá",20:25 20/10 ⚽ Fortis vs Goa (BLV Xôi Xoài) [FHD]
