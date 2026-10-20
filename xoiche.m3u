@@ -1,12 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/6308_al-fayha.jpg" group-title="Bóng đá",22:05 19/10 ⚽ Al Fayha vs Al Ahli SC (BLV Khô Mật) [FHD]
 https://live.khoga.space/live/livehub13/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4978_parma.jpg" group-title="Bóng đá",01:45 20/10 ⚽ Parma vs Torino (BLV Khô Bò) [FHD]
-https://live.khoga.space/live/livehub12/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7288_getafe.jpg" group-title="Bóng đá",02:00 20/10 ⚽ Getafe vs Rayo Vallecano (BLV Khô Chè) [FHD]
-https://live.khoga.space/live/livehub5/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/164_tottenham-hotspur.jpg" group-title="Bóng đá",02:00 20/10 ⚽ Tottenham vs Coventry (BLV Khô Chè) [FHD]
-https://live.khoga.space/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/2276_deportivo-pasto.jpg" group-title="Bóng đá",08:05 20/10 ⚽ Dep. Pasto vs Alianza (BLV Khô Mật) [FHD]
 https://live.khoga.space/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/37768_adhyaksa.jpg" group-title="Bóng đá",15:30 20/10 ⚽ Isenmulang Kalteng vs Java United (BLV Tam Mao) [FHD]
@@ -55,6 +49,12 @@ https://live.khoga.space/live/livehub9/index.m3u8
 https://live.khoga.space/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4720_madura-united.jpg" group-title="Bóng đá",19:00 22/10 ⚽ Madura United vs Persib Bandung (BLV Xôi Bắp) [FHD]
 https://live.khoga.space/live/livehub6/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7288_getafe.jpg" group-title="Bóng đá",02:00 20/10 ⚽ Getafe vs Rayo Vallecano (BLV Khô Chè) [FHD]
+https://live.khoga.space/live/livehub5/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/164_tottenham-hotspur.jpg" group-title="Bóng đá",02:00 20/10 ⚽ Tottenham vs Coventry (BLV Khô Chè) [FHD]
+https://live.khoga.space/live/livehub5/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4978_parma.jpg" group-title="Bóng đá",01:45 20/10 ⚽ Parma vs Torino (BLV Khô Bò) [FHD]
+https://live.khoga.space/live/livehub12/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7689_trabzonspor.jpg" group-title="Bóng đá",00:00 20/10 ⚽ Trabzonspor vs Besiktas (BLV Xôi Gấc) [FHD]
 https://live.khoga.space/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/6221_rodina-moskva.jpg" group-title="Bóng đá",23:30 19/10 ⚽ Rodina Moscow vs Orenburg (BLV Khô Bò) [FHD]
