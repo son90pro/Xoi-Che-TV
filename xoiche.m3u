@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/306_columbus-crew.jpg" group-title="Bóng đá",07:00 22/10 ⚽ Columbus Crew vs St. Louis City (BLV Khô Bò) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=l4pDy0sHUT4YQntQMGRIcbffxilU69IFYUv7JVypDgc&expires=1855579061&token_path=%2Flive%2Flivehub12/live/livehub12/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/546_palmeiras.jpg" group-title="Bóng đá",07:30 22/10 ⚽ Palmeiras vs Fluminense (BLV Khô Cay) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=C8MIz3iBie0TxQ7IJVbKl2wxYeMCDiQBpnhj9zedeTs&expires=1855579061&token_path=%2Flive%2Flivehub9/live/livehub9/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5347_toluca.jpg" group-title="Bóng đá",08:00 22/10 ⚽ Toluca vs Club Tijuana (BLV Xôi Xoài) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=94NMTHEad6UpOwuY7elPOUFb0h1wMdcj5SpUVwmlwg0&expires=1855579061&token_path=%2Flive%2Flivehub3/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/445_psm-makassar.jpg" group-title="Bóng đá",15:30 22/10 ⚽ PSM Makassar vs Persebaya (BLV Tam Mao) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=FK4zR2467DvcA9Fn4dCuA9l8E2pj4aXUFkktxkc6_GM&expires=1855579061&token_path=%2Flive%2Flivehub8/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4720_madura-united.jpg" group-title="Bóng đá",19:00 22/10 ⚽ Madura United vs Persib Bandung (BLV Xôi Bắp) [FHD]
@@ -99,6 +93,10 @@ https://khogalive.b-cdn.net/bcdn_token=k2Np4muA1CnINe3Ho4ek9IIT350VErv-UbOvlumoG
 https://khogalive.b-cdn.net/bcdn_token=2s7I168olNPU6vVKWV6SfASXbWkPwQ27KoV9g69eolg&expires=1855579061&token_path=%2Flive%2Flivehub13/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7272_valencia.jpg" group-title="Bóng đá",23:30 24/10 ⚽ Valencia vs Villarreal (BLV Xôi Xoài) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=94NMTHEad6UpOwuY7elPOUFb0h1wMdcj5SpUVwmlwg0&expires=1855579061&token_path=%2Flive%2Flivehub3/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5347_toluca.jpg" group-title="Bóng đá",08:00 22/10 ⚽ Toluca vs Club Tijuana (BLV Xôi Xoài) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=94NMTHEad6UpOwuY7elPOUFb0h1wMdcj5SpUVwmlwg0&expires=1855579061&token_path=%2Flive%2Flivehub3/live/livehub3/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/546_palmeiras.jpg" group-title="Bóng đá",07:30 22/10 ⚽ Palmeiras vs Fluminense (BLV Khô Cay) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=C8MIz3iBie0TxQ7IJVbKl2wxYeMCDiQBpnhj9zedeTs&expires=1855579061&token_path=%2Flive%2Flivehub9/live/livehub9/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3088_aston-villa.jpg" group-title="Bóng đá",02:00 22/10 ⚽ Aston Villa vs Viking (BLV Xôi Gấc) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=dRYFWOS8NR3jV1Miob0kGctX5UCvdUiohqB83sdbUfM&expires=1855579061&token_path=%2Flive%2Flivehub11/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/72_bayern-munchen.jpg" group-title="Bóng đá",02:00 22/10 ⚽ Bayern Munich vs Arsenal (BLV Tam Mao) [FHD]
