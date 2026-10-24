@@ -1,18 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3088_aston-villa.jpg" group-title="Bóng đá",18:30 24/10 ⚽ Aston Villa vs Manchester City (BLV Xôi Xoài) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=94NMTHEad6UpOwuY7elPOUFb0h1wMdcj5SpUVwmlwg0&expires=1855579061&token_path=%2Flive%2Flivehub3/live/livehub3/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7264_rayo-vallecano.jpg" group-title="Bóng đá",19:00 24/10 ⚽ Rayo Vallecano vs Elche (BLV Xôi Bắp) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=3lsMy5IgFqP3UuPYzg-wTh7YZR6ew7W8GTccyfyGvwo&expires=1855579061&token_path=%2Flive%2Flivehub6/live/livehub6/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8239_como.jpg" group-title="Bóng đá",20:00 24/10 ⚽ Como vs Sassuolo (BLV Khô Chè) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=k2Np4muA1CnINe3Ho4ek9IIT350VErv-UbOvlumoGdk&expires=1855579061&token_path=%2Flive%2Flivehub5/live/livehub5/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/101_rb-leipzig.jpg" group-title="Bóng đá",20:30 24/10 ⚽ RB Leipzig vs Elversberg (BLV Xôi Gấc) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=dRYFWOS8NR3jV1Miob0kGctX5UCvdUiohqB83sdbUfM&expires=1855579061&token_path=%2Flive%2Flivehub11/live/livehub11/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/images/teams/arsenal.png" group-title="Bóng đá",21:00 24/10 ⚽ Arsenal vs Everton (BLV Khô Mật) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=2s7I168olNPU6vVKWV6SfASXbWkPwQ27KoV9g69eolg&expires=1855579061&token_path=%2Flive%2Flivehub13/live/livehub13/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3094_coventry-city.jpg" group-title="Bóng đá",21:00 24/10 ⚽ Coventry vs Fulham (BLV Tam Mao) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=FK4zR2467DvcA9Fn4dCuA9l8E2pj4aXUFkktxkc6_GM&expires=1855579061&token_path=%2Flive%2Flivehub8/live/livehub8/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/numia-vero-volley-milano-vb.png" group-title="Bóng chuyền",21:00 24/10 🏐 Numia Vero Volley Milano vs Laica UYBA Busto Arsizio (BLV Lương Khô) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=Qlu9bUGHx8fS14O2mr32Bm0jndtWCKPpUlzAQ5DYecI&expires=1855579061&token_path=%2Flive%2Flivehub2/live/livehub2/index.m3u8
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/imoco-conegliano-vb.png" group-title="Bóng chuyền",23:00 24/10 🏐 Imoco Conegliano vs Savino Del Bene Scandicci (BLV Khô Bò) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=l4pDy0sHUT4YQntQMGRIcbffxilU69IFYUv7JVypDgc&expires=1855579061&token_path=%2Flive%2Flivehub12/live/livehub12/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/152_napoli.jpg" group-title="Bóng đá",23:00 24/10 ⚽ Napoli vs AS Roma (BLV Khô Cay) [FHD]
@@ -73,6 +59,24 @@ https://khogalive.b-cdn.net/bcdn_token=94NMTHEad6UpOwuY7elPOUFb0h1wMdcj5SpUVwmlw
 https://khogalive.b-cdn.net/bcdn_token=94NMTHEad6UpOwuY7elPOUFb0h1wMdcj5SpUVwmlwg0&expires=1855579061&token_path=%2Flive%2Flivehub3/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/374_al-ain.jpg" group-title="Bóng đá",23:00 26/10 ⚽ Al Ain vs Tractor (BLV Xôi Gấc) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=dRYFWOS8NR3jV1Miob0kGctX5UCvdUiohqB83sdbUfM&expires=1855579061&token_path=%2Flive%2Flivehub11/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5998_santa-clara.jpg" group-title="Bóng đá",01:45 27/10 ⚽ Santa Clara vs Benfica (BLV Xôi Gấc) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=dRYFWOS8NR3jV1Miob0kGctX5UCvdUiohqB83sdbUfM&expires=1855579061&token_path=%2Flive%2Flivehub11/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/386_johor-darul-tazim.jpg" group-title="Bóng đá",17:00 27/10 ⚽ Johor DT vs Port MTI FC (BLV Xôi Gấc) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=dRYFWOS8NR3jV1Miob0kGctX5UCvdUiohqB83sdbUfM&expires=1855579061&token_path=%2Flive%2Flivehub11/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/78_shakhtar-donetsk.jpg" group-title="Bóng đá",23:00 27/10 ⚽ Shakhtar Donetsk vs Dyn. Kyiv (BLV Xôi Gấc) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=dRYFWOS8NR3jV1Miob0kGctX5UCvdUiohqB83sdbUfM&expires=1855579061&token_path=%2Flive%2Flivehub11/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/1792849652180309194_fe8860d3.jpg" group-title="Bóng đá",21:00 24/10 ⚽ Arsenal vs Everton (BLV Khô Mật) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=2s7I168olNPU6vVKWV6SfASXbWkPwQ27KoV9g69eolg&expires=1855579061&token_path=%2Flive%2Flivehub13/live/livehub13/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3094_coventry-city.jpg" group-title="Bóng đá",21:00 24/10 ⚽ Coventry vs Fulham (BLV Tam Mao) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=FK4zR2467DvcA9Fn4dCuA9l8E2pj4aXUFkktxkc6_GM&expires=1855579061&token_path=%2Flive%2Flivehub8/live/livehub8/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/101_rb-leipzig.jpg" group-title="Bóng đá",20:30 24/10 ⚽ RB Leipzig vs Elversberg (BLV Xôi Gấc) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=dRYFWOS8NR3jV1Miob0kGctX5UCvdUiohqB83sdbUfM&expires=1855579061&token_path=%2Flive%2Flivehub11/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8239_como.jpg" group-title="Bóng đá",20:00 24/10 ⚽ Como vs Sassuolo (BLV Khô Chè) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=k2Np4muA1CnINe3Ho4ek9IIT350VErv-UbOvlumoGdk&expires=1855579061&token_path=%2Flive%2Flivehub5/live/livehub5/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7264_rayo-vallecano.jpg" group-title="Bóng đá",19:00 24/10 ⚽ Rayo Vallecano vs Elche (Nhà Đài) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=l4pDy0sHUT4YQntQMGRIcbffxilU69IFYUv7JVypDgc&expires=1855579061&token_path=%2Flive%2Flivehub12/live/livehub12/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3088_aston-villa.jpg" group-title="Bóng đá",18:30 24/10 ⚽ Aston Villa vs Manchester City (BLV Xôi Xoài) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=94NMTHEad6UpOwuY7elPOUFb0h1wMdcj5SpUVwmlwg0&expires=1855579061&token_path=%2Flive%2Flivehub3/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/376_melbourne-victory.jpg" group-title="Bóng đá",15:40 24/10 ⚽ Melbourne Victory vs Melbourne City (BLV Khô Mật) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=2s7I168olNPU6vVKWV6SfASXbWkPwQ27KoV9g69eolg&expires=1855579061&token_path=%2Flive%2Flivehub13/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/2236_chengdu-rongcheng.jpg" group-title="Bóng đá",14:30 24/10 ⚽ Chengdu Rongcheng vs Dalian Yingbo (BLV Tam Mao) [FHD]
