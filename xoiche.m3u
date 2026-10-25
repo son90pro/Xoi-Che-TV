@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7958_new-york-rb.jpg" group-title="Bóng đá",04:30 25/10 ⚽ New York Red Bulls vs Inter Miami (BLV Xôi Xoài) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=94NMTHEad6UpOwuY7elPOUFb0h1wMdcj5SpUVwmlwg0&expires=1855579061&token_path=%2Flive%2Flivehub3/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/566_santos.jpg" group-title="Bóng đá",07:00 25/10 ⚽ Santos vs Bahia (BLV Khô Mật) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=2s7I168olNPU6vVKWV6SfASXbWkPwQ27KoV9g69eolg&expires=1855579061&token_path=%2Flive%2Flivehub13/live/livehub13/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1054_wellington-phoenix.jpg" group-title="Bóng đá",09:00 25/10 ⚽ Wellington Phoenix vs Central Coast Mariners (BLV Khô Mật) [FHD]
@@ -69,6 +67,8 @@ https://khogalive.b-cdn.net/bcdn_token=C8MIz3iBie0TxQ7IJVbKl2wxYeMCDiQBpnhj9zede
 https://khogalive.b-cdn.net/bcdn_token=dRYFWOS8NR3jV1Miob0kGctX5UCvdUiohqB83sdbUfM&expires=1855579061&token_path=%2Flive%2Flivehub11/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/78_shakhtar-donetsk.jpg" group-title="Bóng đá",23:00 27/10 ⚽ Shakhtar Donetsk vs Dyn. Kyiv (BLV Xôi Gấc) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=dRYFWOS8NR3jV1Miob0kGctX5UCvdUiohqB83sdbUfM&expires=1855579061&token_path=%2Flive%2Flivehub11/live/livehub11/index.m3u8
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7958_new-york-rb.jpg" group-title="Bóng đá",04:30 25/10 ⚽ New York Red Bulls vs Inter Miami (BLV Xôi Xoài) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=94NMTHEad6UpOwuY7elPOUFb0h1wMdcj5SpUVwmlwg0&expires=1855579061&token_path=%2Flive%2Flivehub3/live/livehub3/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/73_atletico-de-madrid.jpg" group-title="Bóng đá",02:00 25/10 ⚽ Atl. Madrid vs Dep. A Coruna (BLV Xôi Gấc) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=dRYFWOS8NR3jV1Miob0kGctX5UCvdUiohqB83sdbUfM&expires=1855579061&token_path=%2Flive%2Flivehub11/live/livehub11/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/93_lazio.jpg" group-title="Bóng đá",01:45 25/10 ⚽ Lazio vs Parma (BLV Khô Cay) [FHD]
