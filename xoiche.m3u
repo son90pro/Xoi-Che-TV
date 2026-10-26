@@ -1,15 +1,15 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://xoiche2.live/media/matches/ballon_dor_2024.jpg" group-title="Bóng đá",20:00 27/10 ⚽ Lễ Trao Giải vs Quả Bóng Vàng 2024 (BLV Tam Mao) [FHD]
+https://khogalive.b-cdn.net/bcdn_token=FK4zR2467DvcA9Fn4dCuA9l8E2pj4aXUFkktxkc6_GM&expires=1855579061&token_path=%2Flive%2Flivehub8/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/102_manchester-united.jpg" group-title="Bóng đá",21:00 25/10 ⚽ Mân Đàn vs Bournemouth (Nhà Đài) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=Qlu9bUGHx8fS14O2mr32Bm0jndtWCKPpUlzAQ5DYecI&expires=1855577611&token_path=%2F/livehub2/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/102_manchester-united.jpg" group-title="Bóng đá",21:00 25/10 ⚽ Manchester Utd vs Bournemouth (BLV Khô Cay) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=C8MIz3iBie0TxQ7IJVbKl2wxYeMCDiQBpnhj9zedeTs&expires=1855579061&token_path=%2Flive%2Flivehub9/live/livehub9/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3111_sunderland.jpg" group-title="Bóng đá",23:30 25/10 ⚽ Sunderland vs Leeds (BLV Xôi Bắp) [FHD]
-https://khogalive.b-cdn.net/bcdn_token=3lsMy5IgFqP3UuPYzg-wTh7YZR6ew7W8GTccyfyGvwo&expires=1855579061&token_path=%2Flive%2Flivehub6/live/livehub6/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7964_los-angeles.jpg" group-title="Bóng đá",08:00 26/10 ⚽ Los Angeles FC vs Los Angeles Galaxy (BLV Tam Mao) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=FK4zR2467DvcA9Fn4dCuA9l8E2pj4aXUFkktxkc6_GM&expires=1855579061&token_path=%2Flive%2Flivehub8/live/livehub8/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/284_club-america.jpg" group-title="Bóng đá",08:05 26/10 ⚽ Club America vs Pachuca (BLV Xôi Xoài) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=94NMTHEad6UpOwuY7elPOUFb0h1wMdcj5SpUVwmlwg0&expires=1855579061&token_path=%2Flive%2Flivehub3/live/livehub3/index.m3u8
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5350_tijuana.jpg" group-title="Bóng đá",10:10 26/10 ⚽ Club Tijuana vs Santos Laguna (BLV Khô Chè) [FHD]
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5350_tijuana.jpg" group-title="Bóng đá",10:00 26/10 ⚽ Club Tijuana vs Santos Laguna (BLV Khô Chè) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=k2Np4muA1CnINe3Ho4ek9IIT350VErv-UbOvlumoGdk&expires=1855579061&token_path=%2Flive%2Flivehub5/live/livehub5/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/4727_persebaya-surabaya.jpg" group-title="Bóng đá",19:00 26/10 ⚽ Persebaya vs Madura United (BLV Tam Mao) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=FK4zR2467DvcA9Fn4dCuA9l8E2pj4aXUFkktxkc6_GM&expires=1855579061&token_path=%2Flive%2Flivehub8/live/livehub8/index.m3u8
