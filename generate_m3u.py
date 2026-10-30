@@ -3,20 +3,26 @@ import json
 import time
 from curl_cffi import requests as curl_requests
 
-# Danh sách domain quét tự động
-DOMAINS = ["https://xoiche.live", "https://xoiche2.live"]
+BASE_DOMAIN = "https://xoiche3.live"
+INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_commentator=true&sport=1"
 
-# Header tối giản y hệt lệnh fetch() trên trình duyệt (đã xóa sạch X-Site & X-Client-Transport)
+# Cấu hình Header khớp với API mới của xoiche3.live
 HEADERS = {
-    "Accept": "*/*",
+    "Accept": "application/x-obfuscated, application/json, text/plain, */*",
     "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Content-Type": "application/json",
+    "Referer": f"{BASE_DOMAIN}/",
+    "Origin": BASE_DOMAIN,
+    "X-Site-Id": "xoiche",
+    "X-Site": "xoiche",
+    "X-Client-Transport": "obfuscated",
     "Sec-Fetch-Dest": "empty",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Site": "same-origin",
 }
 
 
-def fix_url(url, domain):
+def fix_url(url):
     if not url:
         return ""
     if url.startswith("//"):
@@ -24,7 +30,7 @@ def fix_url(url, domain):
     if url.startswith("/"):
         if url.startswith("/live/"):
             return "https://live.khoga.space" + url
-        return domain + url
+        return BASE_DOMAIN + url
     return url
 
 
@@ -38,31 +44,27 @@ def format_match_time(time_str):
         return ""
 
 
-def fetch_matches_from_domain(domain):
+def fetch_all_matches():
     matches = []
-    api_url = f"{domain}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_stream=true"
+    current_url = INITIAL_API_URL
 
-    headers = HEADERS.copy()
-    headers["Referer"] = f"{domain}/"
-    headers["Origin"] = domain
-
-    # Giả lập trình duyệt Chrome để qua mặt Cloudflare
+    # Sử dụng curl_cffi để vượt qua lớp bảo mật Cloudflare / TLS Fingerprint
     session = curl_requests.Session(impersonate="chrome120")
 
-    print(f"\n--- Đang thử domain: {domain} ---", flush=True)
+    print(
+        "Đang khởi tạo phiên truy cập trang chủ xoiche3.live...", flush=True
+    )
     try:
-        init_res = session.get(f"{domain}/", headers=headers, timeout=15)
+        init_res = session.get(f"{BASE_DOMAIN}/", headers=HEADERS, timeout=15)
         print(f"Trang chủ status: {init_res.status_code}", flush=True)
         time.sleep(1)
     except Exception as e:
-        print(f"Không thể kết nối {domain}: {e}", flush=True)
-        return []
+        print(f"Không thể kết nối trang chủ: {e}", flush=True)
 
-    current_url = api_url
     while current_url:
         print(f"Đang tải API: {current_url}", flush=True)
         try:
-            res = session.get(current_url, headers=headers, timeout=20)
+            res = session.get(current_url, headers=HEADERS, timeout=20)
 
             if res.status_code != 200:
                 print(f"Lỗi HTTP {res.status_code}", flush=True)
@@ -70,13 +72,16 @@ def fetch_matches_from_domain(domain):
 
             try:
                 data = res.json()
-            except Exception as e:
-                print(f"Lỗi parse JSON: {e}", flush=True)
-                print(
-                    f"Nội dung nhận được (100 ký tự đầu): {res.text[:100]}",
-                    flush=True,
-                )
-                break
+            except Exception:
+                try:
+                    data = json.loads(res.text)
+                except Exception as ex:
+                    print(
+                        f"Không thể parse JSON: {ex}, text:"
+                        f" {res.text[:100]}",
+                        flush=True,
+                    )
+                    break
 
             results = data.get("results", [])
             print(f"-> Lấy thành công {len(results)} trận.", flush=True)
@@ -84,11 +89,11 @@ def fetch_matches_from_domain(domain):
 
             next_page = data.get("next")
             if next_page:
-                current_url = fix_url(next_page, domain)
+                current_url = fix_url(next_page)
             else:
                 current_url = None
         except Exception as e:
-            print(f"Lỗi request: {e}", flush=True)
+            print(f"Lỗi khi tải dữ liệu: {e}", flush=True)
             break
 
     return matches
@@ -108,7 +113,7 @@ def build_m3u_playlist(matches):
         sport_name = (
             match.get("sport_name")
             or sport_info.get("name")
-            or "Thể Thao Khác"
+            or "Bóng Đá"
         )
         sport_icon = (
             sport_info.get("icon") or ("⚽" if "Bóng đá" in sport_name else "🏐")
@@ -120,8 +125,7 @@ def build_m3u_playlist(matches):
 
         logo_url = fix_url(
             match.get("home_team_logo")
-            or (match.get("home_team") or {}).get("logo"),
-            "https://xoiche2.live",
+            or (match.get("home_team") or {}).get("logo")
         )
 
         commentator_streams = match.get("commentator_streams") or []
@@ -142,7 +146,7 @@ def build_m3u_playlist(matches):
             if not stream_url:
                 continue
 
-            stream_url = fix_url(stream_url, "https://xoiche2.live")
+            stream_url = fix_url(stream_url)
 
             comm_info = stream_item.get("commentator") or {}
             comm_name = (
@@ -162,16 +166,11 @@ def build_m3u_playlist(matches):
 
 
 def main():
-    all_matches = []
-    for domain in DOMAINS:
-        matches = fetch_matches_from_domain(domain)
-        if matches:
-            all_matches.extend(matches)
-            break
+    print("Đang lấy danh sách trận đấu từ xoiche3.live...", flush=True)
+    matches = fetch_all_matches()
+    print(f"Tổng cộng đã tìm thấy {len(matches)} trận đấu.", flush=True)
 
-    print(f"\nTổng cộng đã tìm thấy {len(all_matches)} trận đấu.", flush=True)
-
-    playlist_content = build_m3u_playlist(all_matches)
+    playlist_content = build_m3u_playlist(matches)
     with open("xoiche.m3u", "w", encoding="utf-8") as f:
         f.write(playlist_content)
 
