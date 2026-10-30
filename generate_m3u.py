@@ -1,12 +1,12 @@
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 import json
 import time
 from curl_cffi import requests as curl_requests
 
 BASE_DOMAIN = "https://xoiche3.live"
-INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_commentator=true&sport=1"
+INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_commentator=true"
 
-# Sử dụng headers tối giản, loại bỏ hoàn toàn cờ obfuscated để nhận JSON thuần
+# Headers tối giản nhận JSON thuần
 HEADERS = {
     "Accept": "application/json, text/plain, */*",
     "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
@@ -17,6 +17,16 @@ HEADERS = {
     "Sec-Fetch-Site": "same-origin",
 }
 
+# Danh sách thứ tự ưu tiên các tab thể thao
+SPORT_ORDER = [
+    "Bóng đá",
+    "Bóng chuyền",
+    "Bóng rổ",
+    "Bóng bàn",
+    "Cầu lông",
+    "Bi a",
+    "Sports Games"
+]
 
 def fix_url(url):
     if not url:
@@ -29,16 +39,39 @@ def fix_url(url):
         return BASE_DOMAIN + url
     return url
 
-
 def format_match_time(time_str):
     if not time_str:
-        return ""
+        return "", None
     try:
-        dt = datetime.fromisoformat(time_str)
-        return dt.strftime("%H:%M %d/%m")
+        # Xử lý chuỗi thời gian ISO sang datetime object (UTC hoặc chuẩn giờ)
+        dt = datetime.fromisoformat(time_str.replace("Z", "+00:00"))
+        # Quy đổi sang giờ Việt Nam (UTC+7) nếu cần thiết, hoặc giữ nguyên tùy API trả về
+        # Ở đây giả định so sánh trực tiếp múi giờ hệ thống / UTC tương ứng
+        formatted_str = dt.strftime("%H:%M %d/%m")
+        return formatted_str, dt
     except Exception:
-        return ""
+        return "", None
 
+def is_today_or_tomorrow(dt):
+    """Kiểm tra trận đấu có nằm trong hôm nay hoặc ngày mai không (theo giờ VN / UTC+7)"""
+    if not dt:
+        return False
+    
+    # Lấy giờ hiện tại theo múi giờ VN (UTC+7)
+    vn_tz = timezone(timedelta(hours=7))
+    now_vn = datetime.now(vn_tz)
+    
+    # Chuyển dt sang múi giờ VN nếu có info timezone
+    if dt.tzinfo is not None:
+        dt_vn = dt.astimezone(vn_tz)
+    else:
+        dt_vn = dt.replace(tzinfo=vn_tz)
+        
+    start_today = now_vn.replace(hour=0, minute=0, second=0, microsecond=0)
+    end_tomorrow = start_today + timedelta(days=2) # Hết ngày mai (tính đến 23:59 ngày mai)
+    
+    # Cho phép giữ lại các trận đang diễn ra sớm hơn một chút hoặc từ đầu ngày hôm nay đến hết ngày mai
+    return start_today <= dt_vn < end_tomorrow
 
 def fetch_all_matches():
     matches = []
@@ -46,9 +79,7 @@ def fetch_all_matches():
 
     session = curl_requests.Session(impersonate="chrome120")
 
-    print(
-        "Đang khởi tạo phiên truy cập trang chủ xoiche3.live...", flush=True
-    )
+    print("Đang khởi tạo phiên truy cập trang chủ xoiche3.live...", flush=True)
     try:
         init_res = session.get(f"{BASE_DOMAIN}/", headers=HEADERS, timeout=15)
         print(f"Trang chủ status: {init_res.status_code}", flush=True)
@@ -69,11 +100,10 @@ def fetch_all_matches():
                 data = res.json()
             except Exception as e:
                 print(f"Không thể parse JSON: {e}", flush=True)
-                print(f"Text nhận được: {res.text[:150]}", flush=True)
                 break
 
             results = data.get("results", [])
-            print(f"-> Lấy thành công {len(results)} trận.", flush=True)
+            print(f"-> Lấy thành công {len(results)} trận từ trang.", flush=True)
             matches.extend(results)
 
             next_page = data.get("next")
@@ -87,28 +117,48 @@ def fetch_all_matches():
 
     return matches
 
-
 def build_m3u_playlist(matches):
-    m3u_lines = ["#EXTM3U"]
+    # Gom nhóm theo tên môn thể thao
+    categorized_matches = {sport: [] for sport in SPORT_ORDER}
     seen_ids = set()
 
     for match in matches:
         match_id = match.get("id")
         if match_id in seen_ids:
             continue
+        
+        time_str = match.get("start_time")
+        time_formatted, dt_obj = format_match_time(time_str)
+        
+        # Lọc chỉ lấy trận hôm nay và ngày mai
+        if not is_today_or_tomorrow(dt_obj):
+            continue
+            
         seen_ids.add(match_id)
 
         sport_info = match.get("sport") or {}
-        sport_name = (
-            match.get("sport_name")
-            or sport_info.get("name")
-            or "Bóng Đá"
-        )
-        sport_icon = (
-            sport_info.get("icon") or ("⚽" if "Bóng đá" in sport_name else "🏐")
-        )
+        raw_sport_name = match.get("sport_name") or sport_info.get("name") or "Bóng đá"
+        
+        # Chuẩn hóa tên môn thể thao khớp với các tab định sẵn
+        sport_name = "Bóng đá"
+        lower_name = raw_sport_name.lower()
+        if "chuyền" in lower_name:
+            sport_name = "Bóng chuyền"
+        elif "rổ" in lower_name:
+            sport_name = "Bóng rổ"
+        elif "bàn" in lower_name:
+            sport_name = "Bóng bàn"
+        elif "cầu lông" in lower_name:
+            sport_name = "Cầu lông"
+        elif "bi a" in lower_name or "bida" in lower_name or "pool" in lower_name:
+            sport_name = "Bi a"
+        elif "game" in lower_name or "esports" in lower_name:
+            sport_name = "Sports Games"
 
-        time_formatted = format_match_time(match.get("start_time"))
+        if sport_name not in categorized_matches:
+            categorized_matches[sport_name] = []
+
+        sport_icon = sport_info.get("icon") or ("⚽" if sport_name == "Bóng đá" else "📺")
         home_team = match.get("home_team_name") or "Đội nhà"
         away_team = match.get("away_team_name") or "Đội khách"
 
@@ -118,7 +168,6 @@ def build_m3u_playlist(matches):
         )
 
         commentator_streams = match.get("commentator_streams") or []
-
         if not commentator_streams:
             primary = match.get("primary_stream_url")
             backup = match.get("backup_stream_url")
@@ -129,42 +178,42 @@ def build_m3u_playlist(matches):
                 }]
 
         for stream_item in commentator_streams:
-            stream_url = stream_item.get("stream_url") or stream_item.get(
-                "backup_stream_url"
-            )
+            stream_url = stream_item.get("stream_url") or stream_item.get("backup_stream_url")
             if not stream_url:
                 continue
 
             stream_url = fix_url(stream_url)
-
             comm_info = stream_item.get("commentator") or {}
-            comm_name = (
-                comm_info.get("name")
-                or stream_item.get("commentator_name")
-                or "Nhà Đài"
-            )
+            comm_name = comm_info.get("name") or stream_item.get("commentator_name") or "Nhà Đài"
 
             quality_label = "[FHD]"
             title_display = f"{time_formatted} {sport_icon} {home_team} vs {away_team} ({comm_name}) {quality_label}"
 
             extinf = f'#EXTINF:-1 tvg-logo="{logo_url}" group-title="{sport_name}",{title_display}'
+            
+            # Lưu trữ theo cấu trúc để sắp xếp thứ tự tab
+            categorized_matches[sport_name].append((extinf, stream_url))
+
+    # Xây dựng nội dung file M3U theo đúng thứ tự ưu tiên các tab
+    m3u_lines = ["#EXTM3U"]
+    for sport in SPORT_ORDER:
+        items = categorized_matches.get(sport, [])
+        for extinf, stream_url in items:
             m3u_lines.append(extinf)
             m3u_lines.append(stream_url)
 
     return "\n".join(m3u_lines)
 
-
 def main():
-    print("Đang lấy danh sách trận đấu từ xoiche3.live...", flush=True)
+    print("Đang lọc và lấy danh sách trận đấu hôm nay và ngày mai...", flush=True)
     matches = fetch_all_matches()
-    print(f"Tổng cộng đã tìm thấy {len(matches)} trận đấu.", flush=True)
+    print(f"Tổng số trận sau khi lọc lịch hôm nay & ngày mai: {len(matches)} trận.", flush=True)
 
     playlist_content = build_m3u_playlist(matches)
     with open("xoiche.m3u", "w", encoding="utf-8") as f:
         f.write(playlist_content)
 
-    print("Đã tạo file xoiche.m3u thành công!", flush=True)
-
+    print("Đã cập nhật file xoiche.m3u thành công với các tab phân loại chuẩn xác!", flush=True)
 
 if __name__ == "__main__":
     main()
