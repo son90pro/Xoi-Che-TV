@@ -1,12 +1,13 @@
+import base64
 from datetime import datetime
 import json
 import time
+import zlib
 from curl_cffi import requests as curl_requests
 
 BASE_DOMAIN = "https://xoiche3.live"
 INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_commentator=true&sport=1"
 
-# Cấu hình Header khớp với API mới của xoiche3.live
 HEADERS = {
     "Accept": "application/x-obfuscated, application/json, text/plain, */*",
     "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
@@ -44,11 +45,48 @@ def format_match_time(time_str):
         return ""
 
 
+def decode_payload(text):
+    """Hàm giải mã chuỗi dữ liệu obfuscated/base64 từ xoiche3.live"""
+    if not text:
+        return None
+
+    # 1. Thử parse JSON trực tiếp nếu là plain text
+    try:
+        return json.loads(text)
+    except Exception:
+        pass
+
+    clean_text = text.strip()
+    if clean_text.startswith('"') and clean_text.endswith('"'):
+        clean_text = clean_text[1:-1]
+
+    # 2. Giải mã Base64 kết hợp giải nén Zlib / Decompress
+    try:
+        raw_bytes = base64.b64decode(clean_text)
+
+        # Thử giải mã trực tiếp từ bytes sang utf-8 JSON
+        try:
+            return json.loads(raw_bytes.decode("utf-8"))
+        except Exception:
+            pass
+
+        # Thử các kiểu nén zlib / deflate phổ biến
+        for wbits in [16 + zlib.MAX_WBITS, zlib.MAX_WBITS, -zlib.MAX_WBITS]:
+            try:
+                decompressed = zlib.decompress(raw_bytes, wbits)
+                return json.loads(decompressed.decode("utf-8"))
+            except Exception:
+                pass
+    except Exception as e:
+        print(f"Lỗi giải mã payload: {e}", flush=True)
+
+    return None
+
+
 def fetch_all_matches():
     matches = []
     current_url = INITIAL_API_URL
 
-    # Sử dụng curl_cffi để vượt qua lớp bảo mật Cloudflare / TLS Fingerprint
     session = curl_requests.Session(impersonate="chrome120")
 
     print(
@@ -66,25 +104,23 @@ def fetch_all_matches():
         try:
             res = session.get(current_url, headers=HEADERS, timeout=20)
 
-            if res.status_code != 200:
+            if res.status_status != 200 and res.status_code != 200:
                 print(f"Lỗi HTTP {res.status_code}", flush=True)
                 break
 
-            try:
-                data = res.json()
-            except Exception:
-                try:
-                    data = json.loads(res.text)
-                except Exception as ex:
-                    print(
-                        f"Không thể parse JSON: {ex}, text:"
-                        f" {res.text[:100]}",
-                        flush=True,
-                    )
-                    break
+            # Giải mã dữ liệu trả về từ server
+            data = decode_payload(res.text)
+
+            if not data or not isinstance(data, dict):
+                print(
+                    f"Không thể giải mã JSON từ phản hồi. Text mẫu:"
+                    f" {res.text[:100]}",
+                    flush=True,
+                )
+                break
 
             results = data.get("results", [])
-            print(f"-> Lấy thành công {len(results)} trận.", flush=True)
+            print(f"-> Giải mã và lấy thành công {len(results)} trận.", flush=True)
             matches.extend(results)
 
             next_page = data.get("next")
@@ -179,4 +215,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
+            
