@@ -104,7 +104,8 @@ def fetch_all_matches():
         try:
             res = session.get(current_url, headers=HEADERS, timeout=20)
 
-            if res.status_status != 200 and res.status_code != 200:
+            # Đã sửa lại đúng cú pháp status_code
+            if res.status_code != 200:
                 print(f"Lỗi HTTP {res.status_code}", flush=True)
                 break
 
@@ -215,4 +216,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-            
+    
