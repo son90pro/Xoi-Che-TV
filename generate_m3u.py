@@ -6,8 +6,9 @@ from curl_cffi import requests as curl_requests
 BASE_DOMAIN = "https://xoiche3.live"
 INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_commentator=true"
 
-# Headers tối giản nhận JSON thuần
+# Headers giả lập trình duyệt thật để tránh bị Cloudflare chặn trên GitHub Actions
 HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Accept": "application/json, text/plain, */*",
     "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
     "Referer": f"{BASE_DOMAIN}/",
@@ -15,9 +16,11 @@ HEADERS = {
     "Sec-Fetch-Dest": "empty",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Site": "same-origin",
+    "Sec-Ch-Ua": '"Chromium";v="122", "Not(A:Brand";v="8", "Google Chrome";v="122"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"Windows"',
 }
 
-# Danh sách thứ tự ưu tiên các tab thể thao
 SPORT_ORDER = [
     "Bóng đá",
     "Bóng chuyền",
@@ -43,47 +46,39 @@ def format_match_time(time_str):
     if not time_str:
         return "", None
     try:
-        # Xử lý chuỗi thời gian ISO sang datetime object (UTC hoặc chuẩn giờ)
         dt = datetime.fromisoformat(time_str.replace("Z", "+00:00"))
-        # Quy đổi sang giờ Việt Nam (UTC+7) nếu cần thiết, hoặc giữ nguyên tùy API trả về
-        # Ở đây giả định so sánh trực tiếp múi giờ hệ thống / UTC tương ứng
         formatted_str = dt.strftime("%H:%M %d/%m")
         return formatted_str, dt
     except Exception:
         return "", None
 
 def is_today_or_tomorrow(dt):
-    """Kiểm tra trận đấu có nằm trong hôm nay hoặc ngày mai không (theo giờ VN / UTC+7)"""
     if not dt:
         return False
-    
-    # Lấy giờ hiện tại theo múi giờ VN (UTC+7)
     vn_tz = timezone(timedelta(hours=7))
     now_vn = datetime.now(vn_tz)
     
-    # Chuyển dt sang múi giờ VN nếu có info timezone
     if dt.tzinfo is not None:
         dt_vn = dt.astimezone(vn_tz)
     else:
         dt_vn = dt.replace(tzinfo=vn_tz)
         
     start_today = now_vn.replace(hour=0, minute=0, second=0, microsecond=0)
-    end_tomorrow = start_today + timedelta(days=2) # Hết ngày mai (tính đến 23:59 ngày mai)
-    
-    # Cho phép giữ lại các trận đang diễn ra sớm hơn một chút hoặc từ đầu ngày hôm nay đến hết ngày mai
+    end_tomorrow = start_today + timedelta(days=2)
     return start_today <= dt_vn < end_tomorrow
 
 def fetch_all_matches():
     matches = []
     current_url = INITIAL_API_URL
 
+    # Sử dụng impersonate chrome120 để vượt qua lớp bảo mật TLS fingerprint
     session = curl_requests.Session(impersonate="chrome120")
 
     print("Đang khởi tạo phiên truy cập trang chủ xoiche3.live...", flush=True)
     try:
         init_res = session.get(f"{BASE_DOMAIN}/", headers=HEADERS, timeout=15)
         print(f"Trang chủ status: {init_res.status_code}", flush=True)
-        time.sleep(1)
+        time.sleep(2)
     except Exception as e:
         print(f"Không thể kết nối trang chủ: {e}", flush=True)
 
@@ -91,6 +86,7 @@ def fetch_all_matches():
         print(f"Đang tải API: {current_url}", flush=True)
         try:
             res = session.get(current_url, headers=HEADERS, timeout=20)
+            print(f"API Status Code: {res.status_code}", flush=True)
 
             if res.status_code != 200:
                 print(f"Lỗi HTTP {res.status_code}", flush=True)
@@ -100,6 +96,7 @@ def fetch_all_matches():
                 data = res.json()
             except Exception as e:
                 print(f"Không thể parse JSON: {e}", flush=True)
+                print(f"Nội dung phản hồi thực tế từ server (50 ký tự đầu): {res.text[:150]}", flush=True)
                 break
 
             results = data.get("results", [])
@@ -111,6 +108,9 @@ def fetch_all_matches():
                 current_url = fix_url(next_page)
             else:
                 current_url = None
+            
+            # Nghỉ ngắn giữa các trang để tránh bị rate-limit
+            time.sleep(1)
         except Exception as e:
             print(f"Lỗi khi tải dữ liệu: {e}", flush=True)
             break
@@ -118,7 +118,6 @@ def fetch_all_matches():
     return matches
 
 def build_m3u_playlist(matches):
-    # Gom nhóm theo tên môn thể thao
     categorized_matches = {sport: [] for sport in SPORT_ORDER}
     seen_ids = set()
 
@@ -130,7 +129,6 @@ def build_m3u_playlist(matches):
         time_str = match.get("start_time")
         time_formatted, dt_obj = format_match_time(time_str)
         
-        # Lọc chỉ lấy trận hôm nay và ngày mai
         if not is_today_or_tomorrow(dt_obj):
             continue
             
@@ -139,7 +137,6 @@ def build_m3u_playlist(matches):
         sport_info = match.get("sport") or {}
         raw_sport_name = match.get("sport_name") or sport_info.get("name") or "Bóng đá"
         
-        # Chuẩn hóa tên môn thể thao khớp với các tab định sẵn
         sport_name = "Bóng đá"
         lower_name = raw_sport_name.lower()
         if "chuyền" in lower_name:
@@ -190,11 +187,8 @@ def build_m3u_playlist(matches):
             title_display = f"{time_formatted} {sport_icon} {home_team} vs {away_team} ({comm_name}) {quality_label}"
 
             extinf = f'#EXTINF:-1 tvg-logo="{logo_url}" group-title="{sport_name}",{title_display}'
-            
-            # Lưu trữ theo cấu trúc để sắp xếp thứ tự tab
             categorized_matches[sport_name].append((extinf, stream_url))
 
-    # Xây dựng nội dung file M3U theo đúng thứ tự ưu tiên các tab
     m3u_lines = ["#EXTM3U"]
     for sport in SPORT_ORDER:
         items = categorized_matches.get(sport, [])
