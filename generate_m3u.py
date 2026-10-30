@@ -1,16 +1,17 @@
+import base64
 from datetime import datetime, timedelta, timezone
 import json
 import time
+import zlib
 from curl_cffi import requests as curl_requests
 
 BASE_DOMAIN = "https://xoiche3.live"
 INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_commentator=true"
 
-# Headers giả lập trình duyệt thật để tránh bị Cloudflare chặn trên GitHub Actions
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en-US;q=0.7",
     "Referer": f"{BASE_DOMAIN}/",
     "Origin": BASE_DOMAIN,
     "Sec-Fetch-Dest": "empty",
@@ -67,11 +68,40 @@ def is_today_or_tomorrow(dt):
     end_tomorrow = start_today + timedelta(days=2)
     return start_today <= dt_vn < end_tomorrow
 
+def parse_api_response(res):
+    """Hàm thông minh tự động nhận diện JSON, Base64 hoặc dữ liệu mã hóa từ server"""
+    text_content = res.text.strip()
+    
+    # 1. Thử parse trực tiếp dạng JSON
+    try:
+        return res.json()
+    except Exception:
+        pass
+
+    # 2. Thử giải mã nếu là chuỗi Base64
+    try:
+        decoded_bytes = base64.b64decode(text_content)
+        
+        # Thử giải nén gzip/zlib nếu có
+        try:
+            decompressed = zlib.decompress(decoded_bytes, wbits=16 + zlib.MAX_WBITS)
+            return json.loads(decompressed.decode("utf-8"))
+        except Exception:
+            try:
+                decompressed = zlib.decompress(decoded_bytes)
+                return json.loads(decompressed.decode("utf-8"))
+            except Exception:
+                # Giải mã thẳng ra string JSON
+                return json.loads(decoded_bytes.decode("utf-8"))
+    except Exception as e:
+        print(f"Không thể giải mã dữ liệu trả về: {e}", flush=True)
+        print(f"Nội dung thô: {text_content[:150]}", flush=True)
+        return {}
+
 def fetch_all_matches():
     matches = []
     current_url = INITIAL_API_URL
 
-    # Sử dụng impersonate chrome120 để vượt qua lớp bảo mật TLS fingerprint
     session = curl_requests.Session(impersonate="chrome120")
 
     print("Đang khởi tạo phiên truy cập trang chủ xoiche3.live...", flush=True)
@@ -92,13 +122,7 @@ def fetch_all_matches():
                 print(f"Lỗi HTTP {res.status_code}", flush=True)
                 break
 
-            try:
-                data = res.json()
-            except Exception as e:
-                print(f"Không thể parse JSON: {e}", flush=True)
-                print(f"Nội dung phản hồi thực tế từ server (50 ký tự đầu): {res.text[:150]}", flush=True)
-                break
-
+            data = parse_api_response(res)
             results = data.get("results", [])
             print(f"-> Lấy thành công {len(results)} trận từ trang.", flush=True)
             matches.extend(results)
@@ -109,7 +133,6 @@ def fetch_all_matches():
             else:
                 current_url = None
             
-            # Nghỉ ngắn giữa các trang để tránh bị rate-limit
             time.sleep(1)
         except Exception as e:
             print(f"Lỗi khi tải dữ liệu: {e}", flush=True)
