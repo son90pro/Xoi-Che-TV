@@ -1,22 +1,17 @@
-import base64
 from datetime import datetime
 import json
 import time
-import zlib
 from curl_cffi import requests as curl_requests
 
 BASE_DOMAIN = "https://xoiche3.live"
 INITIAL_API_URL = f"{BASE_DOMAIN}/api/matches/?ordering=smart&page_size=36&page=1&site=xoiche&has_commentator=true&sport=1"
 
+# Sử dụng headers tối giản, loại bỏ hoàn toàn cờ obfuscated để nhận JSON thuần
 HEADERS = {
-    "Accept": "application/x-obfuscated, application/json, text/plain, */*",
+    "Accept": "application/json, text/plain, */*",
     "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Content-Type": "application/json",
     "Referer": f"{BASE_DOMAIN}/",
     "Origin": BASE_DOMAIN,
-    "X-Site-Id": "xoiche",
-    "X-Site": "xoiche",
-    "X-Client-Transport": "obfuscated",
     "Sec-Fetch-Dest": "empty",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Site": "same-origin",
@@ -45,41 +40,6 @@ def format_match_time(time_str):
         return ""
 
 
-def decode_payload(text):
-    """Hàm tự động giải mã chuỗi Base64/Obfuscated trả về từ xoiche3.live"""
-    if not text:
-        return None
-
-    # 1. Thử parse JSON trực tiếp nếu là plain text
-    try:
-        return json.loads(text)
-    except Exception:
-        pass
-
-    clean_text = text.strip()
-    if clean_text.startswith('"') and clean_text.endswith('"'):
-        clean_text = clean_text[1:-1]
-
-    # 2. Giải mã Base64 sang JSON hoặc Zlib
-    try:
-        raw_bytes = base64.b64decode(clean_text)
-        try:
-            return json.loads(raw_bytes.decode("utf-8"))
-        except Exception:
-            pass
-
-        for wbits in [16 + zlib.MAX_WBITS, zlib.MAX_WBITS, -zlib.MAX_WBITS]:
-            try:
-                decompressed = zlib.decompress(raw_bytes, wbits)
-                return json.loads(decompressed.decode("utf-8"))
-            except Exception:
-                pass
-    except Exception as e:
-        print(f"Lỗi giải mã payload: {e}", flush=True)
-
-    return None
-
-
 def fetch_all_matches():
     matches = []
     current_url = INITIAL_API_URL
@@ -105,19 +65,15 @@ def fetch_all_matches():
                 print(f"Lỗi HTTP {res.status_code}", flush=True)
                 break
 
-            # Giải mã chuỗi dữ liệu nhận được từ server
-            data = decode_payload(res.text)
-
-            if not data or not isinstance(data, dict):
-                print(
-                    "Không thể giải mã dữ liệu JSON từ phản hồi! Phản hồi thô:"
-                    f" {res.text[:100]}",
-                    flush=True,
-                )
+            try:
+                data = res.json()
+            except Exception as e:
+                print(f"Không thể parse JSON: {e}", flush=True)
+                print(f"Text nhận được: {res.text[:150]}", flush=True)
                 break
 
             results = data.get("results", [])
-            print(f"-> Giải mã và lấy thành công {len(results)} trận.", flush=True)
+            print(f"-> Lấy thành công {len(results)} trận.", flush=True)
             matches.extend(results)
 
             next_page = data.get("next")
@@ -203,5 +159,13 @@ def main():
     matches = fetch_all_matches()
     print(f"Tổng cộng đã tìm thấy {len(matches)} trận đấu.", flush=True)
 
-    playlist_content = build_m
+    playlist_content = build_m3u_playlist(matches)
+    with open("xoiche.m3u", "w", encoding="utf-8") as f:
+        f.write(playlist_content)
+
+    print("Đã tạo file xoiche.m3u thành công!", flush=True)
+
+
+if __name__ == "__main__":
+    main()
     
