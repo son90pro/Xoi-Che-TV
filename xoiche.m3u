@@ -7,21 +7,17 @@ https://livecdn321.cdnfastter.xyz/live/live_9f71176d0e/index.m3u8?token=3MXeEPMR
 https://khogalive.b-cdn.net/bcdn_token=Qlu9bUGHx8fS14O2mr32Bm0jndtWCKPpUlzAQ5DYecI&expires=1855577611&token_path=%2F/livehub2/index.m3u8
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/102_manchester-united.jpg" group-title="Bóng đá",21:00 25/10 ⚽ Manchester Utd vs Bournemouth (BLV Khô Cay) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/536_argentina.jpg" group-title="Bóng đá",06:00 14/11 ⚽ Argentina vs Uruguay (BLV Khô Mật) [FHD]
-https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/535_colombia.jpg" group-title="Bóng đá",07:00 14/11 ⚽ Colombia vs Chile (BLV Xôi Gấc) [FHD]
-https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/649_oman.jpg" group-title="Bóng đá",16:00 14/11 ⚽ Oman vs Tajikistan (BLV Xôi Gấc) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/540_japan.jpg" group-title="Bóng đá",17:15 14/11 ⚽ Nhật Bản vs Brazil (BLV Tam Mao) [FHD]
-https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/540_japan.jpg" group-title="Bóng đá",17:15 14/11 ⚽ Nhật Bản vs Brazil (BLV Khô Mật) [FHD]
+https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
 #EXTINF:-1 tvg-logo="https://flagcdn.com/w160/cn.png" group-title="Bóng đá",19:00 14/11 ⚽ Trung Quốc vs Malaysia (BLV Khô Cá) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/9458_vietnam-u23.jpg" group-title="Bóng đá",19:00 14/11 ⚽ U23 Việt Nam vs Qatar U23 (BLV Lương Khô) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_f64016ed85/index.m3u8?token=2zFHBLZ7ZQ-fbhTLWfwNITX5zZlxj49JwHBeBRcyALM&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/9458_vietnam-u23.jpg" group-title="Bóng đá",19:00 14/11 ⚽ U23 Việt Nam vs Qatar U23 (BLV Khô Cóc) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_22ba35ebaa/index.m3u8?token=rnGiAKd7Ef-B1Q39PpqAGJSIrNI8dj2Sz-3IRtLMfUs
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/7262_real-valladolid.jpg" group-title="Bóng đá",20:00 14/11 ⚽ Valladolid vs Castellon (BLV Khô Chè) [FHD]
+#EXTINF:-1 tvg-logo="https://flagcdn.com/w160/th.png" group-title="Bóng đá",19:30 14/11 ⚽ Thái Lan vs Brunei (BLV Khô Chè) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_a7657aeb05/index.m3u8?token=JhV-r8e3ccnFy-WcOqY4LotVZyi-effj_AKbg9uCVjU&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/681_kosovo.jpg" group-title="Bóng đá",21:00 14/11 ⚽ Kosovo vs Israel (BLV Tam Mao) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
@@ -31,6 +27,8 @@ https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-j
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5513_nac-breda.jpg" group-title="Bóng đá",22:30 14/11 ⚽ NAC Breda vs FC Emmen (BLV Xôi Gấc) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/680_georgia.jpg" group-title="Bóng đá",00:00 15/11 ⚽ Georgia vs Hungary (BLV Tam Mao) [FHD]
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/692_norway.jpg" group-title="Bóng đá",00:00 15/11 ⚽ Na Uy vs Xứ Wales (BLV Khô Mật) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/734_algeria.jpg" group-title="Bóng đá",02:00 15/11 ⚽ Algeria vs Togo (BLV Khô Cay) [FHD]
@@ -45,10 +43,14 @@ https://livecdn321.cdnfastter.xyz/live/live_f64016ed85/index.m3u8?token=2zFHBLZ7
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/519_jamaica.jpg" group-title="Bóng đá",08:00 15/11 ⚽ Jamaica vs Mexico (BLV Khô Mật) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5085_machida-zelvia.jpg" group-title="Bóng đá",12:00 15/11 ⚽ Machida vs Vissel Kobe (BLV Tam Mao) [FHD]
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5053_kashima-antlers.jpg" group-title="Bóng đá",13:00 15/11 ⚽ Kashima Antlers vs Yokohama F. Marinos (BLV Khô Mật) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/346_kyrgyz-republic.jpg" group-title="Bóng đá",19:00 15/11 ⚽ Kyrgyzstan vs Việt Nam (BLV Lương Khô) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_f64016ed85/index.m3u8?token=2zFHBLZ7ZQ-fbhTLWfwNITX5zZlxj49JwHBeBRcyALM&expires=1852800615
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/697_cyprus.jpg" group-title="Bóng đá",21:00 15/11 ⚽ Síp vs Montenegro (BLV Tam Mao) [FHD]
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/151_granada.jpg" group-title="Bóng đá",22:15 15/11 ⚽ Granada CF vs Las Palmas (BLV Xôi Gấc) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/11085_arsenal-fc-w.jpg" group-title="Bóng đá",23:30 15/11 ⚽ Arsenal W vs London City Lionesses W (BLV Khô Cá) [FHD]
@@ -57,10 +59,12 @@ https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-j
 https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/629_sudan.jpg" group-title="Bóng đá",20:00 16/11 ⚽ Sudan vs Senegal (BLV Xôi Gấc) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/535_colombia.jpg" group-title="Bóng đá",07:00 14/11 ⚽ Colombia vs Chile (BLV Xôi Gấc) [FHD]
+https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/536_argentina.jpg" group-title="Bóng đá",06:00 14/11 ⚽ Argentina vs Uruguay (BLV Khô Mật) [FHD]
+https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/717_morocco.jpg" group-title="Bóng đá",03:00 14/11 ⚽ Morocco vs Niger (BLV Khô Cay) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/15_scotland.jpg" group-title="Bóng đá",02:45 14/11 ⚽ Scotland vs Bắc Macedonia (BLV Tam Mao) [FHD]
-https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/696_slovenia.jpg" group-title="Bóng đá",02:45 14/11 ⚽ Slovenia vs Thụy Sĩ (BLV Lương Khô) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_f64016ed85/index.m3u8?token=2zFHBLZ7ZQ-fbhTLWfwNITX5zZlxj49JwHBeBRcyALM&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/10_netherlands.jpg" group-title="Bóng đá",02:45 14/11 ⚽ Hà Lan vs Hy Lạp (BLV Khô Cóc) [FHD]
@@ -1399,7 +1403,7 @@ https://khogalive.b-cdn.net/bcdn_token=asciffoUsy2tZdBkgP0wysXLUeA-LmqmrY0soRlvT
 https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM2E-bfUL2cfww643kT_KZYDbKiUUT4C8ng8o&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/540_japan.jpg" group-title="Bóng đá",17:30 05/10 ⚽ Nhật Bản vs New Zealand (BLV Tam Mao) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/team_478.jpg" group-title="Bóng đá",16:00 05/10 ⚽ Malaysia vs Việt Nam (BLV Khô Cay) [FHD]
+#EXTINF:-1 tvg-logo="https://flagcdn.com/w160/my.png" group-title="Bóng đá",16:00 05/10 ⚽ Malaysia vs Việt Nam (BLV Khô Cay) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/541_ecuador.jpg" group-title="Bóng đá",13:30 05/10 ⚽ Ecuador vs Panama (BLV Khô Chè) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_a7657aeb05/index.m3u8?token=JhV-r8e3ccnFy-WcOqY4LotVZyi-effj_AKbg9uCVjU&expires=1852800615
@@ -1473,7 +1477,7 @@ https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXA
 https://khogalive.b-cdn.net/bcdn_token=asciffoUsy2tZdBkgP0wysXLUeA-LmqmrY0soRlvT8w&expires=1855579061&token_path=%2Flive%2Flivehub4/live/livehub4/index.m3u8
 #EXTINF:-1 tvg-logo="https://flagcdn.com/w160/vn.png" group-title="Bóng đá",16:00 02/10 ⚽ Việt Nam vs Pakistan (BLV Khô Cay) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/team_480.jpg" group-title="Bóng đá",16:00 02/10 ⚽ Thái Lan vs Philippines (BLV Tam Mao) [FHD]
+#EXTINF:-1 tvg-logo="https://flagcdn.com/w160/th.png" group-title="Bóng đá",16:00 02/10 ⚽ Thái Lan vs Philippines (BLV Tam Mao) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
 #EXTINF:-1 tvg-logo="https://flagcdn.com/w160/cn.png" group-title="Bóng đá",13:00 02/10 ⚽ Nữ Trung Quốc vs South Korea W (BLV Gà Rừng) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=asciffoUsy2tZdBkgP0wysXLUeA-LmqmrY0soRlvT8w&expires=1855579061&token_path=%2Flive%2Flivehub4/live/livehub4/index.m3u8
@@ -1489,7 +1493,7 @@ https://khogalive.b-cdn.net/bcdn_token=asciffoUsy2tZdBkgP0wysXLUeA-LmqmrY0soRlvT
 https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
 #EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/team_484.jpg" group-title="Bóng đá",19:30 01/10 ⚽ Indonesia vs Bangladesh (BLV Tam Mao) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/team_478.jpg" group-title="Bóng đá",19:30 01/10 ⚽ Malaysia vs Singapore (BLV Xôi Xoài) [FHD]
+#EXTINF:-1 tvg-logo="https://flagcdn.com/w160/my.png" group-title="Bóng đá",19:30 01/10 ⚽ Malaysia vs Singapore (BLV Xôi Xoài) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM2E-bfUL2cfww643kT_KZYDbKiUUT4C8ng8o&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/540_japan.jpg" group-title="Bóng đá",17:10 01/10 ⚽ Nhật Bản vs Ecuador (BLV Gà Rừng) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=asciffoUsy2tZdBkgP0wysXLUeA-LmqmrY0soRlvT8w&expires=1855579061&token_path=%2Flive%2Flivehub4/live/livehub4/index.m3u8
@@ -1523,9 +1527,9 @@ https://livecdn321.cdnfastter.xyz/live/live_a7657aeb05/index.m3u8?token=JhV-r8e3
 https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/612_burundi.jpg" group-title="Bóng đá",20:00 29/09 ⚽ Burundi vs Algeria (BLV Gà Rừng) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=asciffoUsy2tZdBkgP0wysXLUeA-LmqmrY0soRlvT8w&expires=1855579061&token_path=%2Flive%2Flivehub4/live/livehub4/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/team_480.jpg" group-title="Bóng đá",19:30 29/09 ⚽ Thái Lan vs Việt Nam (BLV Gà Rừng) [FHD]
+#EXTINF:-1 tvg-logo="https://flagcdn.com/w160/th.png" group-title="Bóng đá",19:30 29/09 ⚽ Thái Lan vs Việt Nam (BLV Gà Rừng) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=asciffoUsy2tZdBkgP0wysXLUeA-LmqmrY0soRlvT8w&expires=1855579061&token_path=%2Flive%2Flivehub4/live/livehub4/index.m3u8
-#EXTINF:-1 tvg-logo="https://xoiche2.live/media/teams/logos/team_480.jpg" group-title="Bóng đá",19:30 29/09 ⚽ Thái Lan vs Việt Nam (BLV Khô Cay) [FHD]
+#EXTINF:-1 tvg-logo="https://flagcdn.com/w160/th.png" group-title="Bóng đá",19:30 29/09 ⚽ Thái Lan vs Việt Nam (BLV Khô Cay) [FHD]
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/529_australia.jpg" group-title="Bóng đá",17:00 29/09 ⚽ Úc vs Brazil (BLV Gà Rừng) [FHD]
 https://khogalive.b-cdn.net/bcdn_token=asciffoUsy2tZdBkgP0wysXLUeA-LmqmrY0soRlvT8w&expires=1855579061&token_path=%2Flive%2Flivehub4/live/livehub4/index.m3u8
